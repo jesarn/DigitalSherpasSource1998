@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+<HEAD>
+	<TITLE>KION Classifieds</TITLE>
+
+<!--#include file="../style2.inc" -->
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" BACKGROUND="../images/background3.gif">
+
+<TABLE WIDTH=400><TR><TD class="a">
+<IMG SRC="../images/classifieds2.GIF" WIDTH=400 HEIGHT=54 BORDER=0><BR><BR>
+The KION Classifieds are an easy to use service provided by KIONTV.com.  Our simple yet powerful web interface allows you to place an ad online, or to search existing ads for items to buy, sell, or trade.<br><br>
+<center><A HREF="http://207.66.185.129/kion/classified.html">Search KION Classifieds</A>
+<BR><BR>
+<A HREF="http://207.66.185.129/kion/addclassified.htm">Place Your Own Ad</A></center>
+<BR><BR>
+<!--#include file="../footer.inc" -->
+</TD></TR>
+</TABLE>
+
+
+
+
+
+</BODY>
+</HTML>

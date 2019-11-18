@@ -1,0 +1,56 @@
+*** Installation Started 2/16/98 9:43 ***
+Title: 
+Source: C:\DOWN\MADNES~1.EXE
+Made Dir: C:\MADNESS32
+File Copy: C:\MADNESS32\madscore32.exe
+File Copy: C:\MADNESS32\madscore32.hlp
+File Copy: C:\MADNESS32\madentry32.exe
+File Copy: C:\MADNESS32\madentry32.hlp
+File Copy: C:\MADNESS32\madentry.exe
+File Copy: C:\MADNESS32\madentry.hlp
+Made Dir: C:\MADNESS32\imported
+File Copy: C:\MADNESS32\imported\Bill Bruford.nc2
+File Copy: C:\MADNESS32\imported\Ferd Burfle.nc2
+File Copy: C:\MADNESS32\imported\Chris Squire.nc2
+File Copy: C:\MADNESS32\imported\Doug Harvey.nc2
+File Copy: C:\MADNESS32\imported\Dot Matrix 1.nc2
+File Copy: C:\MADNESS32\imported\Dot Matrix 2.nc2
+File Copy: C:\MADNESS32\imported\Dot Matrix 3.nc2
+File Copy: C:\MADNESS32\imported\Dot Matrix 4.nc2
+File Copy: C:\MADNESS32\imported\Simon Farkle.nc2
+File Copy: C:\MADNESS32\imported\John Anderson.nc2
+File Copy: C:\MADNESS32\imported\Justin Hale.nc2
+File Copy: C:\MADNESS32\imported\Percy Dovetonsils.nc2
+File Copy: C:\MADNESS32\imported\Roseanne Harvey.nc2
+File Copy: C:\MADNESS32\imported\Rick Wakeman.nc2
+File Copy: C:\MADNESS32\imported\Steve Howe.nc2
+Made Dir: C:\MADNESS32\html
+File Copy: C:\MADNESS32\html\\distTMPL.htm
+File Copy: C:\MADNESS32\html\\choiTMPL.htm
+File Copy: C:\MADNESS32\html\\statTMPL.htm
+File Copy: C:\MADNESS32\html\\duplTMPL.htm
+File Copy: C:\MADNESS32\html\\fin4TMPL.htm
+File Copy: C:\MADNESS32\html\\indiTMPL.htm
+File Copy: C:\MADNESS32\html\\paidTMPL.htm
+File Copy: C:\MADNESS32\html\\resuTMPL.htm
+File Copy: C:\MADNESS32\html\\finaTMPL.htm
+File Copy: C:\MADNESS32\html\\ENTRTMPL.htm
+Made Dir: C:\MADNESS32\web
+File Copy: C:\MADNESS32\web\\entry.cgi
+File Copy: C:\MADNESS32\web\\webreadme.txt
+File Copy: C:\MADNESS32\web\\madentry.html
+File Copy: C:\MADNESS32\web\\madentry.class
+File Copy: C:\MADNESS32\web\\maderror.class
+File Copy: C:\MADNESS32\web\\madgrid.class
+File Copy: C:\MADNESS32\web\\madhelp.class
+File Copy: C:\MADNESS32\player.dat
+File Copy: C:\MADNESS32\result.dat
+File Copy: C:\MADNESS32\pool.dat
+Shell Link: C:\WINDOWS\Start Menu\Programs\Madness32 Score.lnk
+Shell Link: C:\WINDOWS\Start Menu\Programs\Madness32 Entry.lnk
+RegDB Key: .NC2
+RegDB Val: ncaa.Document
+RegDB Key: ncaa.Document
+RegDB Val: ncaa.Document
+RegDB Key: ncaa.Document\shell\open\command
+RegDB Val: C:\MADNES~1\madentry32.exe %1

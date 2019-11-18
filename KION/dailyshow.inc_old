@@ -1,0 +1,17 @@
+<%
+if day(date) = 5 then %>
+	<center>
+	<img src="images/tonightonkion.gif" width=125 height=32 alt="" border=0><br>
+	<P><a href="<!--#include file="dailylink.inc"-->" target="main"><%
+	response.write "<img src=""images/shows/diagnosis.jpg"" border=0 alt=""Diagnosis Murder"">"
+	response.write "<BR><strong>Diagnosis Murder</strong><br></A>"
+	briefsynopsis = "-DB=kiontvdetail.fp3&-Format=synopsis.htm&programlink=Diagnosis_Murder&-Max=50&-Find"
+	Set HttpObj = Server.CreateObject("AspHTTP.Conn")
+	HttpObj.Url = "http://207.66.185.129/kion/FMPro?"
+	HttpObj.PostData = briefsynopsis
+	HttpObj.RequestMethod = "POST"
+	strResult = HttpObj.GetURL
+	response.write strResult
+end if
+%></P>
+</center>

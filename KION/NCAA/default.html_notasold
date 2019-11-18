@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!-- Site created by Digital Sherpas - http://www.digital-sherpas.com -->
+
+<HTML>
+<HEAD>
+	<TITLE>KION NCAA Bracket</TITLE>
+	
+	<STYLE type="text/css">
+	P {font-family: 12pt Arial, Sans-Serif; color: black}
+	H1 {font-family: 16pt Arial, Sans-Serif; color: black}
+	H2 {font-family: 14pt Arial, Sans-Serif; color: black}
+	H3 {font-family: 12pt Arial, Sans-Serif; color: black}
+	UL LI {font-family: 10pt Arial, Sans-Serif; color: black}
+	TD.a {font-family: 12pt Arial, Sans-Serif; color: black}
+	TD.b {font-family: 12pt Arial, Sans-Serif; color: white}
+	TD.c {font-family: 14pt Arial, Sans-Serif; font-weight: bold; color: black}
+	H5 {font-family: 10pt Arial, Sans-Serif; color: black}
+	A {font-family: Arial, San-Serif}
+	H6 {font-family 6pt Arial, Sans-Serif; font-weight: bold; color: black}
+</STYLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<table border=0 cellspacing=0 cellpadding=0 width="85%">
+<tr>
+	<td align="CENTER" valign="TOP"><font face="Verdana, Arial, Helvetica" color="#cc0000" SIZE="+2"><b>March Madness Bracket!</b></font></td>
+</tr>
+
+<tr>
+	<td align=left valign=top class=a>
+<br><br>
+<img src="../images/ncaabiglogo.gif" width=200 height=206 alt="" border=0 align="right" hspace=5 vspace=5>
+
+Thanks for entering, keep checking back to see how you place against the competition.
+
+</td></tr>
+
+<tr><td align=left valign=top class=a>
+
+<br><br><FONT SIZE="-1"><A HREF="http://www.kiontv.com/" target="_top">Return to the KION homepage.</A></FONT>
+<BR><BR><BR>
+
+<CENTER>
+<P><FONT SIZE="-1">Copyright 1997,1998 KION.  All rights reserved.
+<BR>Site design by <A HREF="http://www.digital-sherpas.com" TARGET="_top">Digital Sherpas</A>.</FONT></P>
+
+<P><FONT SIZE="-1">Questions or comments?  <A HREF="mailto:kion@digital-sherpas.com">E-mail us.</A></FONT></P>
+</CENTER>
+</td></tr>
+</table>
+</BODY>
+</HTML>
