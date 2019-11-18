@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<TITLE>Location selection</TITLE>
+<BODY BACKGROUND="images/tanbg.gif" BGCOLOR="#cccc99" TEXT="#000000" LINK="#993300" VLINK="#333333" ALINK="#FF9900">
+<font face="Verdana, Arial, Helvetica" color="#000000" SIZE="-1">
+Please select which store is affiliated with this event<BR><BR>
+<P><FORM ACTION="FMPro" METHOD="post">
+<P><INPUT TYPE="hidden" NAME="-db" VALUE="eventdb.FP3">
+<P><INPUT TYPE="hidden" NAME="-lay" VALUE="Layout #1">
+<P><INPUT TYPE="hidden" NAME="-format" VALUE="/k2/detail.htm">
+[FMP-record]
+<table>
+<TR>
+<td rowspan=6 valign="top"><input type="radio" name="store number" value="[fmp-field:rec num]">
+<TD>Store:</td><td>[fmp-field:name]</td>
+</tr>
+<TR>
+<TD>Address:</td><td>[fmp-field:address]</td>
+</tr>
+<TR>
+<TD>City:</td><td>[fmp-field:city]</td>
+</tr>
+<TR>
+<TD>State:</td><td>[fmp-field:state]</td>
+</table>
+[/FMP-record]
+<input type="hidden" name="event type" value="trade show">
+<P><INPUT TYPE="submit" NAME="-new" VALUE="Submit">
+</FORM> 

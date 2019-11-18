@@ -1,0 +1,1443 @@
+[FMP-If: Field: Event type .eq. Trade show]
+<HTML>
+<HEAD>
+<TITLE>Review Trade Show Details</TITLE>
+</HEAD>
+<BODY BACKGROUND="images/tanbg.gif" BGCOLOR="#cccc99" TEXT="#000000" LINK="#993300" VLINK="#333333" ALINK="#FF9900">
+<font face="Verdana, Arial, Helvetica" color="#000000" SIZE="-1">
+<H2>Review Trade Show Details</H2>
+
+<P><FORM ACTION="FMPro" METHOD="post">
+<P><INPUT TYPE="hidden" NAME="-RecID" VALUE="[FMP-currentrecid]">
+<P><INPUT TYPE="hidden" NAME="-db" VALUE="EventDB.FP3">
+<P><INPUT TYPE="hidden" NAME="-lay" VALUE="Layout #1">
+<P><INPUT TYPE="hidden" NAME="-format" VALUE="reviewthankyou.htm">
+<select name="trade show">
+	<option selected>[fmp-field: trade show]
+	<option>Trade Show 1
+	<option>Trade Show 2
+	<option>Trade Show 3
+</select>
+<BR><BR>
+Enter location information (i.e. Hotel/Convention Center, Room, Address, Phone)<BR>
+<BR><textarea name="trade show location" rows=4 cols=40 value="[fmp-field: trade show location]">[fmp-field: trade show location]</textarea>
+<BR><BR>
+<BR>
+<TABLE BORDER=0>
+<TR>
+<TD>Show Date <FONT COLOR="#993300">(mm/dd/yy)</font>:</TD>
+<TD><INPUT TYPE="text" NAME="Date" VALUE="[FMP-field: Date]"></TD>
+</TR>
+<TR>
+<TD>Start Time <FONT COLOR="#993300">(00:00 am/pm)</font>: </TD>
+<TD><INPUT TYPE="text" NAME="Start Time" VALUE="[FMP-field: Start Time]"></TD>
+</TR>
+<TR>
+<TD>End Time <FONT COLOR="#993300">(00:00 am/pm)</font>:   </TD>
+<TD><INPUT TYPE="text" NAME="End Time" VALUE="[FMP-field: End Time]"></TD>
+</TR>
+</TABLE>
+<BR>
+<B>National</B> Ambassador(s) who will attend:<BR>
+Ambassador 1: <select name="National Ambassador 1" size=1>
+	<option selected>[fmp-field: national ambassador 1]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+
+Ambassador 2: <select name="National Ambassador 2" size=1>
+	<option selected>[fmp-field: national ambassador 2]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+Ambassador 3: <select name="National Ambassador 3" size=1>
+	<option selected>[fmp-field: national ambassador 3]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+<BR>
+<BR>
+<B>Regional</B> Ambassador(s) who will attend:<BR>
+Ambassador 1: <select name="Regional Ambassador 1" size=1>
+	<option selected>[fmp-field: regional ambassador 1]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 2: <select name="Regional Ambassador 2" size=1>
+	<option selected>[fmp-field: regional ambassador 2]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 3: <select name="Regional Ambassador 3" size=1>
+	<option selected>[fmp-field: regional ambassador 3]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select><BR>
+Ambassador 4: <select name="Regional Ambassador 4" size=1>
+	<option selected>[fmp-field: regional ambassador 4]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 5: <select name="Regional Ambassador 5" size=1>
+	<option selected>[fmp-field: regional ambassador 5]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+<BR>
+<BR>
+Sales Rep: <select name="Sales Rep" size=1>
+	<option selected>[fmp-field: sales rep]
+	<option>1 of 30
+	<option>2 of 30
+	<option>3 of 30
+	<option>you get the idea
+</select>
+<BR><BR>
+[FMP-field: athlete appear] there will be an Athlete Appearance: 
+Yes<input type="radio" name="athlete appear" value="Yes"> No<input type="radio" name="athlete appear" value="no">
+Athlete's name:<input type="text" name="Athlete Name" value="[fmp-field: athlete name]">
+<BR><BR>
+List location contact information:<BR>
+<textarea name="location contacts" rows=4 cols=40>[fmp-field: location contacts]</textarea>
+<BR><BR>
+Setup Notes:<BR>
+<textarea name="setup notes" rows=4 cols=40>[fmp-field: setup notes]</textarea>
+<BR>
+<BR>
+Show notes and additional resources requested: <BR><textarea name="Misc Notes" rows=4 cols=40>[fmp-field: misc notes]
+</textarea><BR><BR>
+Approve this event?<BR>
+<input type="radio" name="corporate ok" value="Yes">Yes<BR>
+<input type="radio" name="corporate ok" value="No">No<BR>
+<BR>
+<P><INPUT TYPE="submit" NAME="-edit" VALUE="Submit">
+<INPUT TYPE="reset" VALUE="Clear Form">
+</FORM>
+</font> 
+</BODY> 
+</HTML>
+[/FMP-If]
+
+[FMP-If: Field: Event type .eq. Store Demo]
+<HTML>
+<HEAD>
+<TITLE>Review Store Demo Event Details</TITLE>
+</HEAD>
+<BODY BACKGROUND="images/tanbg.gif" BGCOLOR="#cccc99" TEXT="#000000" LINK="#993300" VLINK="#333333" ALINK="#FF9900">
+<font face="Verdana, Arial, Helvetica" color="#000000" SIZE="-1">
+<H2>Review Store Demo Event Details</H2>
+
+<P><FORM ACTION="FMPro" METHOD="post">
+<P><INPUT TYPE="hidden" NAME="-RecID" VALUE="[FMP-currentrecid]">
+<P><INPUT TYPE="hidden" NAME="-db" VALUE="EventDB.FP3">
+<P><INPUT TYPE="hidden" NAME="-lay" VALUE="Layout #1">
+<P><INPUT TYPE="hidden" NAME="-format" VALUE="/k2/reviewthankyou.htm">
+
+<TABLE BORDER=1>
+<TR><TD>Store Name:</TD><TD>[FMP-field: Store Name]</TD></TR>
+<TR><TD>Address:</TD><TD>[FMP-field: Store Street]</TD></TR>
+<TR><TD>City, ST  ZIP:</TD><TD>[FMP-field: Store City], [FMP-field: Store State] [FMP-field: Store Zip]</TD></TR>
+<TR><TD>Phone #</TD><TD><input type="text" name="phone num" value="[FMP-field: phone num]"></TD></TR>
+<TR><TD>Store Manager</TD><TD><input type="text" name="manager" value="[FMP-field: manager]"></TD></TR>
+<TR><TD>Floor Manager</TD><TD><input type="text" name="floor manager" value="[FMP-field: floor manager]"></TD></TR>
+<TR><TD>Department Manager</TD><TD><input type="text" name="department manager" value="[fmp-field: department manager]"></TD></TR>
+</TABLE>
+<BR>
+<TABLE BORDER=0>
+<TR>
+<TD>Demo Date:</TD>
+<TD><INPUT TYPE="text" NAME="Date" VALUE="[FMP-field: Date]"></TD>
+</TR>
+<TR>
+<TD>Start Time: </TD>
+<TD><INPUT TYPE="text" NAME="Start Time" VALUE="[FMP-field: Start Time]"></TD>
+</TR>
+<TR>
+<TD>End Time:   </TD>
+<TD><INPUT TYPE="text" NAME="End Time" VALUE="[FMP-field: End Time]"></TD>
+</TR>
+</TABLE>
+<BR>
+<B>National</B> Ambassador(s) who will attend:<BR>
+Ambassador 1: <select name="National Ambassador 1" size=1>
+	<option selected>[fmp-field: national ambassador 1]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+
+Ambassador 2: <select name="National Ambassador 2" size=1>
+	<option selected>[fmp-field: national ambassador 2]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+Ambassador 3: <select name="National Ambassador 3" size=1>
+	<option selected>[fmp-field: national ambassador 3]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+<BR>
+<BR>
+<B>Regional</B> Ambassador(s) who will attend:<BR>
+Ambassador 1: <select name="Regional Ambassador 1" size=1>
+	<option selected>[fmp-field: regional ambassador 1]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 2: <select name="Regional Ambassador 2" size=1>
+	<option selected>[fmp-field: regional ambassador 2]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 3: <select name="Regional Ambassador 3" size=1>
+	<option selected>[fmp-field: regional ambassador 3]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select><BR>
+Ambassador 4: <select name="Regional Ambassador 4" size=1>
+	<option selected>[fmp-field: regional ambassador 4]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 5: <select name="Regional Ambassador 5" size=1>
+	<option selected>[fmp-field: regional ambassador 5]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+<BR>
+<BR>
+Sales Rep: <select name="Sales Rep" size=1>
+	<option selected>[fmp-field: sales rep]
+	<option>1 of 30
+	<option>2 of 30
+	<option>3 of 30
+	<option>you get the idea
+</select>
+
+[fmp-field: rep attend] sales Rep will attend event:
+Yes<input type="radio" name="Rep Attend" value="Yes"> No<input type="radio" name="Rep Attend" value="No">
+<BR><BR>
+[fmp-field: athlete appear] an athlete will appear:
+Yes<input type="radio" name="Athlete Appear" value="Yes"> No<input type="radio" name="Athlete Appear" value="No">
+Athlete's name:<input type="text" name="Athlete Name" value="[fmp-field: athlete name]">
+<BR><BR>
+
+Event Charge: <select name="Event Charge" size=1>
+	<option selected>[fmp-field:event charge]
+	<option>100
+	<option>200
+	<option>N/C
+	<option>N/C - Rep Alotment
+	<option>N/C - Advertising
+</select>
+<BR><BR>
+[fmp-field: permit req] permits are required for this event:
+<BR>"YES"<input type="radio" name="Permit Req" value="Yes"> "NO"<input type="radio" name="Permit Req" value="No">
+<BR><BR>
+[fmp-field: insurance req] insurance is required for this event: <BR>
+"YES"<input type="radio" name="insurance req" value="Yes"> "NO" <input type="radio" name="insurance req" value="No">
+<BR>
+<BR>
+Miscellaneous notes and additional resources requested: <BR><textarea name="Misc Notes" rows=4 cols=40>[fmp-field: misc notes]
+</textarea>
+<BR><BR>
+Approve this event?<BR>
+<input type="radio" name="corporate ok" value="Yes">Yes<BR>
+<input type="radio" name="corporate ok" value="No">No<BR>
+<BR>
+<P><INPUT TYPE="submit" NAME="-edit" VALUE="Submit">
+<INPUT TYPE="reset" VALUE="Clear Form"></FORM> 
+</font>
+</BODY> 
+</HTML>
+[/FMP-If]
+
+[FMP-If: Field: Event type .eq. Store Clinic]
+<HTML>
+<HEAD>
+<TITLE>Review Store Clinic Details</TITLE>
+</HEAD>
+<BODY BACKGROUND="images/tanbg.gif" BGCOLOR="#cccc99" TEXT="#000000" LINK="#993300" VLINK="#333333" ALINK="#FF9900">
+<font face="Verdana, Arial, Helvetica" color="#000000" SIZE="-1">
+<H2>Review Store Clinic Details</H2>
+
+<P><FORM ACTION="FMPro" METHOD="post">
+<P><INPUT TYPE="hidden" NAME="-RecID" VALUE="[FMP-currentrecid]">
+<P><INPUT TYPE="hidden" NAME="-db" VALUE="EventDB.FP3">
+<P><INPUT TYPE="hidden" NAME="-lay" VALUE="Layout #1">
+<P><INPUT TYPE="hidden" NAME="-format" VALUE="/k2/reviewthankyou.htm">
+
+<TABLE BORDER=1>
+<TR><TD>Store Name:</TD><TD>[FMP-field: Store Name]</TD></TR>
+<TR><TD>Address:</TD><TD>[FMP-field: Store Street]</TD></TR>
+<TR><TD>City, ST  ZIP:</TD><TD>[FMP-field: Store City], [FMP-field: Store State] [FMP-field: Store Zip]</TD></TR>
+<TR><TD>Phone #</TD><TD><input type="text" name="phone num" value="[fmp-field: phone num]"></TD></TR>
+<TR><TD>Store Manager</TD><TD><input type="text" name="manager" value="[fmp-field: manager]"></TD></TR>
+<TR><TD>Floor Manager</TD><TD><input type="text" name="floor manager" value="[fmp-field: floor manager]"></TD></TR>
+<TR><TD>Department Manager</TD><TD><input type="text" name="department manager" value="[fmp-field: department manager]"></TD></TR>
+</TABLE>
+<BR>
+<TABLE BORDER=0>
+<TR>
+<TD>Clinic Date:</TD>
+<TD><INPUT TYPE="text" NAME="Date" VALUE="[FMP-field: Date]"></TD>
+</TR>
+<TR>
+<TD>Start Time: </TD>
+<TD><INPUT TYPE="text" NAME="Start Time" VALUE="[FMP-field: Start Time]"></TD>
+</TR>
+<TR>
+<TD>End Time:   </TD>
+<TD><INPUT TYPE="text" NAME="End Time" VALUE="[FMP-field: End Time]"></TD>
+</TR>
+</TABLE>
+
+<BR><BR>
+[fmp-field: crossterratory rep] crossterritory Rep event.<BR> Yes<input type="radio" name="crossterratory rep" value="Yes"> No<input type="radio" name="crossterratory rep" value="No">
+
+<BR><BR>
+[fmp-field: clinic host] will performed this.<BR> <select name="clinic host">
+	<option>National Ambassador
+	<option>Sales Rep
+</select>
+<BR><BR>
+<B>National</B> Ambassador(s) who will attend:<BR>
+Ambassador 1: <select name="National Ambassador 1" size=1>
+	<option selected>[fmp-field: national ambassador 1]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+
+
+Ambassador 2: <select name="National Ambassador 2" size=1>
+	<option selected>[fmp-field: national ambassador 2]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+Ambassador 3: <select name="National Ambassador 3" size=1>
+	<option selected>[fmp-field: national ambassador 3]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+<BR>
+<BR>
+Sales Rep: <select name="Sales Rep" size=1>
+	<option selected>[fmp-field: sales rep]
+	<option>1 of 30
+	<option>2 of 30
+	<option>3 of 30
+	<option>you get the idea
+</select>
+[FMP-field: Rep Attend] Sales Rep will attend.
+Yes<input type="radio" name="Rep Attend" value="Yes">
+No<input type="radio" name="Rep Attend" value="No"><BR><BR>
+[FMP-field: Athlete Appear] athlete appearance:
+Yes<input type="radio" name="Athlete Appear" value="Yes">
+No<input type="radio" name="Athlete Appear" value="No">Athlete's name:<input type="text" name="Athlete Name" value="[FMP-field: Athlete Name]">
+<BR><BR>
+
+Miscellaneous notes and additional resources requested: <BR><textarea name="Misc Notes" rows=4 cols=40>
+[FMP-field: misc notes]</textarea>
+<BR><BR>
+Approve this event?<BR>
+<input type="radio" name="corporate ok" value="Yes">Yes<BR>
+<input type="radio" name="corporate ok" value="No">No<BR>
+
+<P><INPUT TYPE="submit" NAME="-edit" VALUE="Submit">
+<INPUT TYPE="reset" VALUE="Clear Form">
+
+</FORM> 
+</font>
+</BODY> 
+</HTML>
+[/FMP-If]
+
+[FMP-If: Field: Event type .eq. Sales Promotion]
+<HTML>
+<HEAD>
+<TITLE>Review Sales Promotion Details</TITLE>
+</HEAD>
+<BODY BACKGROUND="images/tanbg.gif" BGCOLOR="#cccc99" TEXT="#000000" LINK="#993300" VLINK="#333333" ALINK="#FF9900">
+<font face="Verdana, Arial, Helvetica" color="#000000" SIZE="-1">
+<H2>Review Sales Promotion Details</H2>
+
+<P><FORM ACTION="FMPro" METHOD="post">
+<P><INPUT TYPE="hidden" NAME="-RecID" VALUE="[FMP-currentrecid]">
+<P><INPUT TYPE="hidden" NAME="-db" VALUE="EventDB.FP3">
+<P><INPUT TYPE="hidden" NAME="-lay" VALUE="Layout #1">
+<P><INPUT TYPE="hidden" NAME="-format" VALUE="/k2/reviewthankyou.htm">
+
+<TABLE BORDER=1>
+<TR><TD>Store Name:</TD><TD>[FMP-field: Store Name]</TD></TR>
+<TR><TD>Address:</TD><TD>[FMP-field: Store Street]</TD></TR>
+<TR><TD>City, ST  ZIP:</TD><TD>[FMP-field: Store City], [FMP-field: Store State] [FMP-field: Store Zip]</TD></TR>
+<TR><TD>Phone #</TD><TD><input type="text" name="phone num" value="[fmp-field: phone num]"></TD></TR>
+<TR><TD>Store Manager</TD><TD><input type="text" name="manager" value="[fmp-field: manager]"></TD></TR>
+<TR><TD>Floor Manager</TD><TD><input type="text" name="floor manager" value="[fmp-field: floor manager]"></TD></TR>
+<TR><TD>Department Manager</TD><TD><input type="text" name="department manager" value="[fmp-field: department manager]"></TD></TR>
+</TABLE>
+<BR>
+<TABLE BORDER=0>
+<TR>
+<TD>Start Date:</TD>
+<TD><INPUT TYPE="text" NAME="Date" VALUE="[FMP-field: Date]"></TD>
+</TR>
+<TR>
+<TD>End Date: </TD>
+<TD><INPUT TYPE="text" NAME="end date" VALUE="[FMP-field: Start Time]"></TD>
+</TR>
+</TABLE>
+
+Sales promotion description: <BR><textarea name="sales promo" rows=4 cols=40>
+[FMP-field: sales promo]</textarea>
+<BR><BR>
+If GWP, what items are included in promotion?<BR>
+(check all that apply)<BR>
+[fmp-field: sales contest] Sales Contest: yes<input type="radio" name="sales contest" value="Yes"> No<input type="radio" name="sales contest" value="No"><BR>
+[fmp-field: advertised] Advertised: Yes<input type="radio" name="advertised" value="Yes"> No<input type="radio" name="advertised" value="No"><BR>
+[FMP-field: gwpother] GWP: Yes<input type="radio" name="gwpother" value="Yes"> No<input type="radio" name="gwpother" value="No"><BR>
+[fmp-field: spiff] SPIFF: Yes<input type="radio" name="gwpother" value="Yes"> No<input type="radio" name="gwpother" value="No"><BR>
+<BR><BR>
+[fmp-field: rep attend] Sales Rep will attend event.<BR>
+Yes<input type="radio" name="Rep Attend" value="Yes"> No<input type="radio" name="Rep Attend" value="No">
+<BR><BR>
+[fmp-field: athlete appear] athlete will appearance.<BR>
+Yes<input type="radio" name="Rep Attend" value="Yes"> No<input type="radio" name="Rep Attend" value="No"<BR>
+Athlete's name:<input type="text" name="Athlete Name" value="[fmp-field: athlete name]">
+<BR><BR>
+
+<BR>
+<BR>
+Miscellaneous notes and additional resources requested: <BR><textarea name="Misc Notes" rows=4 cols=40>
+[fmp-field: misc notes]</textarea>
+<BR><BR>
+Approve this event?<BR>
+<input type="radio" name="corporate ok" value="Yes">Yes<BR>
+<input type="radio" name="corporate ok" value="No">No<BR>
+<BR>
+<P><INPUT TYPE="submit" NAME="-edit" VALUE="Submit">
+<INPUT TYPE="reset" VALUE="Clear Form">
+</FORM> 
+</font>
+</BODY> 
+</HTML>
+
+[/FMP-If]
+
+[FMP-If: Field: Event type .eq. College Tour]
+
+<HTML>
+<HEAD>
+<TITLE>Review College Tour Stop Details</TITLE>
+</HEAD>
+<BODY BACKGROUND="images/tanbg.gif" BGCOLOR="#cccc99" TEXT="#000000" LINK="#993300" VLINK="#333333" ALINK="#FF9900">
+<font face="Verdana, Arial, Helvetica" color="#000000" SIZE="-1">
+<H2>Review College Tour Stop Details</H2>
+
+<P><FORM ACTION="FMPro" METHOD="post">
+<P><INPUT TYPE="hidden" NAME="-RecID" VALUE="[FMP-currentrecid]">
+<P><INPUT TYPE="hidden" NAME="-db" VALUE="EventDB.FP3">
+<P><INPUT TYPE="hidden" NAME="-lay" VALUE="Layout #1">
+<P><INPUT TYPE="hidden" NAME="-format" VALUE="/k2/reviewthankyou.htm">
+Location: <input type="text" name="location" value="[fmp-field: location]"><BR>
+The following fields are needed ONLY if a store is involved.<BR>
+<TABLE BORDER=1>
+<TR><TD>Store Name:</TD><TD>[FMP-field: Store Name]</TD></TR>
+<TR><TD>Address:</TD><TD>[FMP-field: Store Street]</TD></TR>
+<TR><TD>City, ST  ZIP:</TD><TD>[FMP-field: Store City], [FMP-field: Store State] [FMP-field: Store Zip]</TD></TR>
+<TR><TD>Phone #</TD><TD><input type="text" name="phone num"></TD></TR>
+<TR><TD>Store Manager</TD><TD><input type="text" name="manager"></TD></TR>
+<TR><TD>Floor Manager</TD><TD><input type="text" name="floor manager"></TD></TR>
+<TR><TD>Department Manager</TD><TD><input type="text" name="department manager"></TD></TR>
+</TABLE>
+<BR>
+<TABLE BORDER=0>
+<TR>
+<TD>Tour Date:</TD>
+<TD><INPUT TYPE="text" NAME="Date" VALUE="[FMP-field: Date]"></TD>
+</TR>
+<TR>
+<TD>Start Time: </TD>
+<TD><INPUT TYPE="text" NAME="Start Time" VALUE="[FMP-field: Start Time]"></TD>
+</TR>
+<TR>
+<TD>End Time:   </TD>
+<TD><INPUT TYPE="text" NAME="End Time" VALUE="[FMP-field: End Time]"></TD>
+</TR>
+</TABLE>
+<BR>
+Please select all needed equipment:<BR>
+[fmp-field: tent] Tent: Yes<input type="radio" name="tent" value="Yes"> No<input type="radio" name="tent" value="No"><BR>
+[fmp-field: van] Van: Yes<input type="radio" name="van" value="Yes"> No<input type="radio" name="van" value="No"><BR>
+[fmp-field: booth] Booth: Yes<input type="radio" name="booth" value="Yes"> No<input type="radio" name="booth" value="No"><BR>
+[fmp-field: van w/trailer] Van w/trailer: Yes<input type="radio" name="van w/trailer" value="Yes"> No<input type="radio" name="van w/trailer" value="No"><BR>
+[fmp-field: trailer] Trailer: Yes<input type="radio" name="trailer" value="Yes"> No <input type="radio" name="trailer" value="No"><BR>
+<BR>
+
+<B>National</B> Ambassador(s) who will attend:<BR>
+Ambassador 1: <select name="National Ambassador 1" size=1>
+	<option selected> [fmp-field: national ambassador 1]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+
+
+Ambassador 2: <select name="National Ambassador 2" size=1>
+	<option selected> [fmp-field: national ambassador 2]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+Ambassador 3: <select name="National Ambassador 3" size=1>
+	<option selected> [fmp-field: national ambassador 3]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+<BR>
+<BR>
+<B>Regional</B> Ambassador(s) who will attend:<BR>
+Ambassador 1: <select name="Regional Ambassador 1" size=1>
+	<option selected> [fmp-field: regional ambassador 1]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 2: <select name="Regional Ambassador 2" size=1>
+	<option selected> [fmp-field: regional ambassador 2]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 3: <select name="Regional Ambassador 3" size=1>
+	<option selected>[fmp-field: regional ambassador 3]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select><BR>
+Ambassador 4: <select name="Regional Ambassador 4" size=1>
+	<option selected> [fmp-field: regional ambassador 4]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 5: <select name="Regional Ambassador 5" size=1>
+	<option selected>[fmp-field: regional ambassador 5]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+<BR>
+<BR>
+Sales Rep: <select name="Sales Rep" size=1>
+	<option selected>[fmp-field: sales rep]
+	<option>none
+	<option>Morgan Turner
+	<option>Jeff Burkley
+	<option>Bruce Simpson
+	<option>Dennis Austin
+	<option>Ed Kearney
+	<option>Eric Weuve
+	<option>Heidi Zimmerman
+	<option>Matt Szura
+	<option>Kurt Watkins
+	<option>Scott McCoubrey
+	<option>Hege Watkins
+	<option>Todd Larsen
+	<option>Vicki Larsen
+	<option>Travis Wiest
+	<option>Glen Morris
+</select>
+
+[fmp-field: rep attend] Sales Rep will attend event.
+Yes<input type="radio" name="Rep Attend" value="Yes"> No<input type="radio" name="Rep Attend" value="No">
+<BR><BR>
+[fmp-field: k2 corp help] will K2 Corporate staff assistance be needed.<BR>
+Yes<input type="radio" name="k2 corp help" value="Yes"> 
+No<input type="radio" name="k2 corp help" value="No"><BR>
+<BR><BR>
+[fmp-field: athlete appear] athlete will appear.
+Yes<input type="radio" name="Athlete Appear" value="Yes"> No<input type="radio" name="Athlete Appear" value="No">
+Athlete's name:<input type="text" name="Athlete Name" value="[fmp-field: athlete name]">
+<BR><BR>
+List sponsorship commitments, including contact names, if applicable. <BR><textarea name="sponsors" rows=4 cols=40>
+[fmp-field: sponsors]</textarea>
+<BR><BR>
+List location contacts:<BR><text area name="location contacts" rows=4 cols=40>[fmp-field: location contacts]</textarea>
+<BR><BR>
+<BR><BR>
+[fmp-field: permit req] permits are required for this event.<BR> "YES"<input type="radio" name="Permit Req" value="Yes"> "NO"<input type="radio" name="Permit Req" value="No">
+<BR><BR>
+List permit information, including fee, office, and contact. <BR><textarea name="permit info" rows=4 cols=40>[fmp-field: permit info]
+</textarea>
+
+<BR><BR>
+[fmp-field: insurance req] insurance is required for this event.<BR> "YES"<input type="radio" name="insurance req" value="Yes"> "NO" <input type="radio" name="insurance req" value="No">
+<BR><BR>
+[fmp-field: secure site] site secured.<BR>
+Yes<input type="radio" name="secure site" value="Yes"> No<input type="radio" name="secure site" value="No">
+<BR><BR>
+[fmp-field: retail assist] retailer is providing assistance.<BR>
+Yes<input type="radio" name="retail assist" value="Yes"> No<input type="radio" name="retail assist" value="No">
+<BR><BR>
+The following materials will be required:<BR>
+[fmp-field: newspaperad] Newspaper Ad: Yes<input type="radio" name="newspaperad" value="Yes"> No<input type="radio" name="newspaperad" value="No"><BR>
+[fmp-field: collateral] Collateral material: Yes<input type="radio" name="collateral" value="Yes"> No<input type="radio" name="collateral" value="No"><BR><BR>
+[fmp-field: iisa instructors] IISA Instructors: Yes<input type="radio" name="iisa instructors" value=
+"Yes"> No<input type="radio" name="iisa instructors" value=
+"No"><BR>
+If IISA instructors will be at the event, list contact information:<BR>
+<textarea name="iisa info" rows=4 cols=40>[fmp-field: iisa info]</textarea><BR><BR>
+[fmp-field: post event gathering] Post-event gathering.<BR>
+Yes<input type="radio" name="post event gathering" value="Yes">
+No<input type="radio" name="post event gathering" value="No"><BR><BR>
+If there will be a Post-event gathering, list location and contact information:<BR>
+<textarea name="gathering info" rows=4 cols=40>[fmp-field: gathering info]</textarea><BR><BR>
+Setup notes:<BR>
+<textarea name="setup notes" rows=4 cols=40>[fmp-field: setup notes]</textarea><BR><BR>
+
+Miscellaneous notes and additional resources requested: <BR><textarea name="Misc Notes" rows=4 cols=40>[fmp-field: misc notes]</textarea>
+<BR><BR>
+Approve this event?<BR>
+<input type="radio" name="corporate ok" value="Yes">Yes<BR>
+<input type="radio" name="corporate ok" value="No">No<BR>
+<BR>
+<P><INPUT TYPE="submit" NAME="-edit" VALUE="Submit">
+<INPUT TYPE="reset" VALUE="Clear Form">
+</FORM> 
+</font>
+</BODY> 
+</HTML>
+
+[/FMP-If]
+
+[FMP-If: Field: Event type .eq. Date To Skate]
+
+<HTML>
+<HEAD>
+<TITLE>Review Date to Skate Details</TITLE>
+</HEAD>
+<BODY BACKGROUND="images/tanbg.gif" BGCOLOR="#cccc99" TEXT="#000000" LINK="#993300" VLINK="#333333" ALINK="#FF9900">
+<font face="Verdana, Arial, Helvetica" color="#000000" SIZE="-1">
+<H2>Review Date to Skate Details</H2>
+
+<P><FORM ACTION="FMPro" METHOD="post">
+<P><INPUT TYPE="hidden" NAME="-RecID" VALUE="[FMP-currentrecid]">
+<P><INPUT TYPE="hidden" NAME="-db" VALUE="EventDB.FP3">
+<P><INPUT TYPE="hidden" NAME="-lay" VALUE="Layout #1">
+<P><INPUT TYPE="hidden" NAME="-format" VALUE="/k2/reviewthankyou.htm">
+
+<TABLE BORDER=1>
+<TR><TD>Store Name:</TD><TD>[FMP-field: Store Name]</TD></TR>
+<TR><TD>Address:</TD><TD>[FMP-field: Store Street]</TD></TR>
+<TR><TD>City, ST  ZIP:</TD><TD>[FMP-field: Store City], [FMP-field: Store State] [FMP-field: Store Zip]</TD></TR>
+<TR><TD>Phone #</TD><TD><input type="text" name="phone num"></TD></TR>
+<TR><TD>Store Manager</TD><TD><input type="text" name="manager"></TD></TR>
+<TR><TD>Floor Manager</TD><TD><input type="text" name="floor manager"></TD></TR>
+<TR><TD>Department Manager</TD><TD><input type="text" name="department manager"></TD></TR>
+</TABLE>
+<BR>
+<TABLE BORDER=0>
+<TR>
+<TD>Event Date:</TD>
+<TD><INPUT TYPE="text" NAME="Date" VALUE="[FMP-field: Date]"></TD>
+</TR>
+<TR>
+<TD>Start Time: </TD>
+<TD><INPUT TYPE="text" NAME="Start Time" VALUE="[FMP-field: Start Time]"></TD>
+</TR>
+<TR>
+<TD>End Time:   </TD>
+<TD><INPUT TYPE="text" NAME="End Time" VALUE="[FMP-field: End Time]"></TD>
+</TR>
+</TABLE>
+
+Location:<BR><textarea name="location" rows=4 cols=40>[fmp-field: location]</textarea>
+<BR><BR>
+Event will utilize:<BR>
+(check all that apply)<BR>
+[fmp-field: tent] Tent: Yes<input type="radio" name="tent" value="Yes"> No<input type="radio" name="tent" value="No"><BR>
+[fmp-field: van] Van: Yes<input type="radio" name="van" value="Yes"> No<input type="radio" name="van" value="No"><BR>
+[fmp-field: booth] Booth: Yes<input type="radio" name="booth" value="Yes"> No<input type="radio" name="booth" value="No"><BR>
+[fmp-field: van w/trailer] Van w/trailer: Yes<input type="radio" name="van w/trailer" value="Yes"> No<input type="radio" name="van w/trailer" value="No"><BR>
+[fmp-field: trailer] Trailer: Yes<input type="radio" name="trailer" value="Yes"> No <input type="radio" name="trailer" value="No"><BR>
+<BR>
+
+<B>National</B> Ambassador(s) who will attend:<BR>
+Ambassador 1: <select name="National Ambassador 1" size=1>
+	<option selected>[fmp-field: national ambassador 1]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+
+
+Ambassador 2: <select name="National Ambassador 2" size=1>
+	<option selected>[fmp-field: national ambassador 2]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+Ambassador 3: <select name="National Ambassador 3" size=1>
+	<option selected>[fmp-field: national ambassador 3]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+<BR>
+<BR>
+<B>Regional</B> Ambassador(s) who will attend:<BR>
+Ambassador 1: <select name="Regional Ambassador 1" size=1>
+	<option selected>[fmp-field: regional ambassador 1]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 2: <select name="Regional Ambassador 2" size=1>
+	<option selected>[fmp-field: regional ambassador 2]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 3: <select name="Regional Ambassador 3" size=1>
+	<option selected>[fmp-field: regional ambassador 3]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select><BR>
+Ambassador 4: <select name="Regional Ambassador 4" size=1>
+	<option selected>[fmp-field: regional ambassador 4]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 5: <select name="Regional Ambassador 5" size=1>
+	<option selected>[fmp-field: regional ambassador 5]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+<BR>
+<BR>
+Sales Rep: <select name="Sales Rep" size=1>
+	<option selected>[fmp-field: sales rep]
+	<option>none
+	<option>Morgan Turner
+	<option>Jeff Burkley
+	<option>Bruce Simpson
+	<option>Dennis Austin
+	<option>Ed Kearney
+	<option>Eric Weuve
+	<option>Heidi Zimmerman
+	<option>Matt Szura
+	<option>Kurt Watkins
+	<option>Scott McCoubrey
+	<option>Hege Watkins
+	<option>Todd Larsen
+	<option>Vicki Larsen
+	<option>Travis Wiest
+	<option>Glen Morris
+</select>
+
+[fmp-field: rep attend] Sales Rep will attend event.
+Yes<input type="radio" name="Rep Attend" value="Yes"> No<input type="radio" name="Rep Attend" value="No">
+<BR><BR>
+[fmp-field: athlete appear] will athlete appearance.
+Yes<input type="radio" name="Athlete Appear" value="Yes"> No<input type="radio" name="Athlete Appear" value="No">
+Athlete's name:<input type="text" name="Athlete Name" value="[fmp-field: athlete name]">
+<BR><BR>
+List Sponsorhsip commitments, including contact names, if applicable:<BR>
+<textarea name="sponsors" rows=4 cols=40>[fmp-field:sponsors]</textarea><BR><BR>
+List location contacts:<BR>
+<textarea name="location contacts" rows=4 cols=40>[fmp-field: location contacts]</textarea><BR><BR>
+
+[fmp-field: permit req] permits are required for this event.<BR> YES<input type="radio" name="Permit Req" value="Yes"> NO<input type="radio" name="Permit Req" value="No">
+<BR><BR>
+List Permit information, including fee, office and contact:<BR>
+<textarea name="permit info" rows=4 cols=40>[fmp-field: permit info]</textarea><BR><BR>
+
+[fmp-field: insurance req] insurance is required for this event.<BR>
+YES<input type="radio" name="insurance req" value="Yes"> NO <input type="radio" name="insurance req" value="No">
+<BR><BR>
+[fmp-field: secure site] site secured.<BR>
+Yes<input type="radio" name="secure site" value="Yes"> No<input type="radio" name="secure site" value="No"><BR><BR>
+[fmp-field: retail assist] retailer is providing assistance.<BR>
+Yes<input type="Radio" name="retail assist" value="Yes"> No<input type="Radio" name="retail assist" value="No"><BR><BR>
+The following materials will be required:<BR>
+[fmp-field: newspaperad] Newspaper Ad: Yes<input type="radio" name="newspaperad" value="Yes"> No<input type="radio" name="newspaperad" value="No"><BR>
+[fmp-field: collateral] Collateral material: Yes<input type="radio" name="collateral" value="Yes"> No<input type="radio" name="collateral" value="No"><BR><BR>
+[fmp-field: iisa instructors] IISA Instructors: Yes<input type="radio" name="iisa instructors" value=
+"Yes"> No<input type="radio" name="iisa instructors" value=
+"No"><BR>
+If IISA instructors will be at the event, list contact information:<BR>
+<textarea name="iisa info" rows=4 cols=40>[fmp-field: iisa info]</textarea><BR><BR>
+[fmp-field: post event gathering] post-event gathering.<BR>
+Yes<input type="radio" name="post event gathering" value="Yes"> No<input type="radio" name="post event gathering" value="No"><BR>
+If there will be a post-event gathering, list location and contact information:<BR>
+<textarea name="gathering info" rows=4 cols=40>[fmp-field: gathering info]</textarea><BR><BR>
+Setup Notes:<BR>
+<textarea name="setup notes" rows=4 cols=50>[fmp-field: setup notes]</textarea><BR><BR>
+
+Miscellaneous notes and additional resources requested: <BR><textarea name="Misc Notes" rows=4 cols=40>
+[fmp-field: misc notes]</textarea>
+<BR><BR>
+Approve this event?<BR>
+<input type="radio" name="corporate ok" value="Yes">Yes<BR>
+<input type="radio" name="corporate ok" value="No">No<BR>
+<BR>
+<P><INPUT TYPE="submit" NAME="-edit" VALUE="Submit">
+<INPUT TYPE="reset" VALUE="Clear Form">
+</FORM>
+</font> 
+</BODY> 
+</HTML>
+
+[/FMP-If]
+
+[FMP-If: Field: Event type .eq. Category Event]
+
+<HTML>
+<HEAD>
+<TITLE>Review Category Event Details</TITLE>
+</HEAD>
+<BODY BACKGROUND="images/tanbg.gif" BGCOLOR="#cccc99" TEXT="#000000" LINK="#993300" VLINK="#333333" ALINK="#FF9900">
+<font face="Verdana, Arial, Helvetica" color="#000000" SIZE="-1">
+<H2>Review Category Event Details</H2>
+
+<P><FORM ACTION="FMPro" METHOD="post">
+<P><INPUT TYPE="hidden" NAME="-RecID" VALUE="[FMP-currentrecid]">
+<P><INPUT TYPE="hidden" NAME="-db" VALUE="EventDB.FP3">
+<P><INPUT TYPE="hidden" NAME="-lay" VALUE="Layout #1">
+<P><INPUT TYPE="hidden" NAME="-format" VALUE="/k2/reviewthankyou.htm">
+
+<TABLE BORDER=1>
+<TR><TD>Store Name:</TD><TD>[FMP-field: Store Name]</TD></TR>
+<TR><TD>Address:</TD><TD>[FMP-field: Store Street]</TD></TR>
+<TR><TD>City, ST  ZIP:</TD><TD>[FMP-field: Store City], [FMP-field: Store State] [FMP-field: Store Zip]</TD></TR>
+<TR><TD>Phone #</TD><TD><input type="text" name="phone num"></TD></TR>
+<TR><TD>Store Manager</TD><TD><input type="text" name="manager"></TD></TR>
+<TR><TD>Floor Manager</TD><TD><input type="text" name="floor manager"></TD></TR>
+<TR><TD>Department Manager</TD><TD><input type="text" name="department manager"></TD></TR>
+</TABLE>
+<BR><BR>
+Select the type of event:<BR>
+<select name="category event">
+	<option selected>[fmp-field: category event]
+	<option>Hockey
+	<option>Aggressive
+	<option>Race
+	<option>Street
+	<option>Other
+</select>
+<BR>
+If "Other" please enter a description:<BR>
+<textarea name="category desc" rows=4 cols=40>[fmp-field: category desc]</textarea><BR><BR>
+Location:<input type="text" name="location" size=40 value="[fmp-field: location]"><BR><BR>
+Event Date:<input type="text" name="date" size=12 value="[fmp-field: date]"><BR><BR>
+Event Description (i.e. Contest, Camp, Tournament)<BR>
+<textarea name="event description" rows=4 cols=40>[fmp-field: event description]</textarea><BR><BR>
+Event will utilize:<BR>
+(check all that apply)<BR>
+[fmp-field: tent] Tent: Yes<input type="radio" name="tent" value="Yes"> No<input type="radio" name="tent" value="No"><BR>
+[fmp-field: van] Van: Yes<input type="radio" name="van" value="Yes"> No<input type="radio" name="van" value="No"><BR>
+[fmp-field: booth] Booth: Yes<input type="radio" name="booth" value="Yes"> No<input type="radio" name="booth" value="No"><BR>
+[fmp-field: van w/trailer] Van w/trailer: Yes<input type="radio" name="van w/trailer" value="Yes"> No<input type="radio" name="van w/trailer" value="No"><BR>
+[fmp-field: trailer] Trailer: Yes<input type="radio" name="trailer" value="Yes"> No <input type="radio" name="trailer" value="No"><BR>
+<BR>
+
+<TABLE BORDER=0>
+<TR>
+<TD>Setup Time:</TD>
+<TD><INPUT TYPE="text" NAME="Setup Time" VALUE="[fmp-field: setup time]"></TD>
+</TR>
+<TR>
+<TD>Start Time: </TD>
+<TD><INPUT TYPE="text" NAME="Start Time" VALUE="[FMP-field: Start Time]"></TD>
+</TR>
+<TR>
+<TD>End Time:   </TD>
+<TD><INPUT TYPE="text" NAME="End Time" VALUE="[FMP-field: End Time]"></TD>
+</TR>
+<TR>
+<TD>Breakdow Time:</TD>
+<TD><INPUT TYPE="text" NAME="breakdown time" VALUE="[fmp-field: breakdown time]"></TD>
+</TR>
+</TABLE>
+
+<BR>
+
+<B>National</B> Ambassador(s) who will attend:<BR>
+Ambassador 1: <select name="National Ambassador 1" size=1>
+	<option selected>[fmp-field: national ambassador 1]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+
+
+Ambassador 2: <select name="National Ambassador 2" size=1>
+	<option selected>[fmp-field: national ambassador 2]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+Ambassador 3: <select name="National Ambassador 3" size=1>
+	<option selected>[fmp-field: national ambassador 3]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+<BR>
+<BR>
+<B>Regional</B> Ambassador 1: <select name="Regional Ambassador 1" size=1>
+	<option selected>[fmp-field: regional ambassador 1]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 2: <select name="Regional Ambassador 2" size=1>
+	<option selected>[fmp-field: regional ambassador 2]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 3: <select name="Regional Ambassador 3" size=1>
+	<option selected>[fmp-field: regional ambassador 3]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select><BR>
+Ambassador 4: <select name="Regional Ambassador 4" size=1>
+	<option selected>[fmp-field: regional ambassador 4]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 5: <select name="Regional Ambassador 5" size=1>
+	<option selected>[fmp-field: regional ambassador 5]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+<BR>
+<BR>
+Sales Rep: <select name="Sales Rep" size=1>
+	<option selected> [fmp-field: sales rep]
+	<option>none
+	<option>Morgan Turner
+	<option>Jeff Burkley
+	<option>Bruce Simpson
+	<option>Dennis Austin
+	<option>Ed Kearney
+	<option>Eric Weuve
+	<option>Heidi Zimmerman
+	<option>Matt Szura
+	<option>Kurt Watkins
+	<option>Scott McCoubrey
+	<option>Hege Watkins
+	<option>Todd Larsen
+	<option>Vicki Larsen
+	<option>Travis Wiest
+	<option>Glen Morris
+</select>
+
+[fmp-field: rep attend] Sales Rep will attend event.
+Yes<input type="radio" name="Rep Attend" value="Yes"> No<input type="radio" name="Rep Attend" value="No">
+<BR><BR>
+[fmp-field: athlete appear] will athlete appearance.
+Yes<input type="radio" name="Athlete Appear" value="Yes"> No<input type="radio" name="Athlete Appear" value="No">
+Athlete's name:<input type="text" name="Athlete Name" value="[fmp-field: athlete name]">
+<BR><BR>
+
+Event Charge: <select name="Event Charge" size=1>
+	<option selected>[fmp-field: event charge]
+	<option>100
+	<option>200
+	<option>N/C
+	<option>N/C - Rep Alotment
+	<option>N/C - Advertising
+
+</select>
+<BR><BR>
+[fmp-field: permit req] permits are required for this event.<BR> YES<input type="radio" name="Permit Req" value="Yes"> NO<input type="radio" name="Permit Req" value="No">
+<BR><BR>
+[fmp-field: insurance req] insurance is required for this event.<BR> "YES"<input type="radio" name="insurance req" value="Yes"> "NO" <input type="radio" name="insurance req" value="No">
+<BR><BR>
+List Sponsorship commitments, including contact names, if applicable:<BR>
+<textarea name="sponsors" rows=4 cols=40>[fmp-field: sponsors]</textarea><BR><BR>
+List location contacts (i.e. event promoter):<BR>
+<textarea name="location contacts" rows=4 cols=40>[fmp-location contacts]</textarea><BR><BR>
+[fmp-field: secure site] site secured.<BR>
+Yes<input type="radio" name="secure site" value="Yes"> No<input type="radio" name="secure site" value="No"><BR><BR>
+[fmp-field: retail assist] retailer is providing assistance.<BR>
+Yes<input type="radio" name="retail assist" value="Yes"> No<input type="radio" name="retail assist" value="No"><BR><BR>
+The following materials will be required:<BR>
+[fmp-field: newspaperad] Newspaper Ad: Yes<input type="radio" name="newspaperad" value="Yes"> No<input type="radio" name="newspaperad" value="No"><BR>
+[fmp-field: collateral] Collateral material: Yes<input type="radio" name="collateral" value="Yes"> No<input type="radio" name="collateral" value="No"><BR><BR>
+[fmp-field: iisa instructors] IISA Instructors: Yes<input type="radio" name="iisa instructors" value=
+"Yes"> No<input type="radio" name="iisa instructors" value=
+"No"><BR>
+If IISA instructors will be at the event, list contact information:<BR>
+<textarea name="iisa info" rows=4 cols=40>[fmp-field: iisa info]</textarea><BR><BR>
+[fmp-field: post gathering event] post-event gathering.<BR>
+Yes<input type="radio" name="post event gathering" value="Yes"> No<input type="radio" name="post event gathering" value="No"><BR>
+If there will be a post-event gathering, list location and contact information:<BR>
+<textarea name="gathering info" rows=4 cols=40>[fmp-field: gathering info]</textarea><BR><BR>
+Setup Notes:<BR>
+<textarea name="setup notes" rows=4 cols=40>[fmp-field: setup notes]</textarea><BR><BR>
+Miscellaneous notes and additional resources requested: <BR><textarea name="Misc Notes" rows=4 cols=40>
+[fmp-field: misc notes]</textarea>
+<BR><BR>
+Approve this event?<BR>
+<input type="radio" name="corporate ok" value="Yes">Yes<BR>
+<input type="radio" name="corporate ok" value="No">No<BR>
+<BR>
+<INPUT TYPE="submit" NAME="-edit" VALUE="Submit">
+<INPUT TYPE="reset" VALUE="Clear Form">
+</FORM> 
+</font>
+</BODY> 
+</HTML>
+
+[/FMP-If]
+
+[FMP-If: Field: Event type .eq. Consumer Promotion]
+<HTML>
+<HEAD>
+<TITLE>Review Consumer Promotion Details</TITLE>
+</HEAD>
+<BODY BACKGROUND="images/tanbg.gif" BGCOLOR="#cccc99" TEXT="#000000" LINK="#993300" VLINK="#333333" ALINK="#FF9900">
+<font face="Verdana, Arial, Helvetica" color="#000000" SIZE="-1">
+<H2>Review Consumer Promotion Details</H2>
+
+<P><FORM ACTION="FMPro" METHOD="post">
+<P><INPUT TYPE="hidden" NAME="-db" VALUE="EventDB.FP3">
+<P><INPUT TYPE="hidden" NAME="-lay" VALUE="Layout #1">
+<P><INPUT TYPE="hidden" NAME="-format" VALUE="/k2/reviewthankyou.htm">
+
+<TABLE BORDER=1>
+<TR><TD>Energy Center:</TD><TD>[FMP-field: energy center]</TD></TR>
+<TR><TD>Address:</TD><TD>[FMP-field: address1]</TD></TR>
+<TR><TD>City, ST:</TD><TD>[FMP-field: City], [FMP-field: State]</TD></TR>
+<TR><TD>Phone #</TD><TD>[FMP-field: phone number]</TD></TR>
+<TR><TD>Contact:</TD><TD>[fmp-field: contact1]</TD></TR>
+</TABLE>
+<BR>
+<TABLE BORDER=0>
+<TR>
+<TD>Promotion Date:</TD>
+<TD><INPUT TYPE="text" NAME="Date" VALUE="[FMP-field: Date]"></TD>
+</TR>
+<TR>
+<TD>Start Time: </TD>
+<TD><INPUT TYPE="text" NAME="Start Time" VALUE="[FMP-field: Start Time]"></TD>
+</TR>
+<TR>
+<TD>End Time:   </TD>
+<TD><INPUT TYPE="text" NAME="End Time" VALUE="[FMP-field: End Time]"></TD>
+</TR>
+</TABLE>
+
+Location:<BR><textarea name="location" rows=4 cols=40>[fmp-field: location]</textarea>
+<BR><BR>
+Event will utilize:<BR>
+(check all that apply)<BR>
+[fmp-field: tent] Tent: Yes<input type="radio" name="tent" value="Yes"> No<input type="radio" name="tent" value="No"><BR>
+[fmp-field: van] Van: Yes<input type="radio" name="van" value="Yes"> No<input type="radio" name="van" value="No"><BR>
+[fmp-field: booth] Booth: Yes<input type="radio" name="booth" value="Yes"> No<input type="radio" name="booth" value="No"><BR>
+[fmp-field: van w/trailer] Van w/trailer: Yes<input type="radio" name="van w/trailer" value="Yes"> No<input type="radio" name="van w/trailer" value="No"><BR>
+[fmp-field: trailer] Trailer: Yes<input type="radio" name="trailer" value="Yes"> No <input type="radio" name="trailer" value="No"><BR>
+<BR>
+[fmp-field: retail assist] retailer is providing assistance.<BR>
+Yes<input type="Radio" name="retail assist" value="Yes"> No<input type="Radio" name="retail assist" value="No"><BR><BR>
+
+<B>National</B> Ambassador(s) who will attend:<BR>
+Ambassador 1: <select name="National Ambassador 1" size=1>
+	<option selected>[fmp-field: national ambassador 1]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+
+
+Ambassador 2: <select name="National Ambassador 2" size=1>
+	<option selected>[fmp-field: national ambassador 2]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+Ambassador 3: <select name="National Ambassador 3" size=1>
+	<option selected>[fmp-field: national ambassador 3]
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+<BR>
+<BR>
+<B>Regional</B> Ambassador(s) who will attend:<BR>
+Ambassador 1: <select name="Regional Ambassador 1" size=1>
+	<option selected>[fmp-field: regional ambassador 1]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 2: <select name="Regional Ambassador 2" size=1>
+	<option selected>[fmp-field: regional ambassador 2]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 3: <select name="Regional Ambassador 3" size=1>
+	<option selected>[fmp-field: regional ambassador 3]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select><BR>
+Ambassador 4: <select name="Regional Ambassador 4" size=1>
+	<option selected>[fmp-field: regional ambassador 4]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 5: <select name="Regional Ambassador 5" size=1>
+	<option selected>[fmp-field: regional ambassador 5]
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+<BR>
+<BR>
+Sales Rep: <select name="Sales Rep" size=1>
+	<optionn selected>[fmp-field: sales rep]
+	<option>none
+	<option>Morgan Turner
+	<option>Jeff Burkley
+	<option>Bruce Simpson
+	<option>Dennis Austin
+	<option>Ed Kearney
+	<option>Eric Weuve
+	<option>Heidi Zimmerman
+	<option>Matt Szura
+	<option>Kurt Watkins
+	<option>Scott McCoubrey
+	<option>Hege Watkins
+	<option>Todd Larsen
+	<option>Vicki Larsen
+	<option>Travis Wiest
+	<option>Glen Morris
+</select>
+
+[fmp-field: rep attend] Sales Rep will attend event.
+Yes<input type="radio" name="Rep Attend" value="Yes"> No<input type="radio" name="Rep Attend" value="No">
+<BR><BR>
+[fmp-field: athlete appear] will athlete appear.
+Yes<input type="radio" name="Athlete Appear" value="Yes"> No<input type="radio" name="Athlete Appear" value="No">
+Athlete's name:<input type="text" name="Athlete Name" value="[fmp-field: athlete name]">
+<BR><BR>
+List Sponsorhsip commitments, including contact names, if applicable:<BR>
+<textarea name="sponsors" rows=4 cols=40>[fmp-field: sponsors]</textarea><BR><BR>
+List location contacts:<BR>
+<textarea name="location contacts" rows=4 cols=40>[fmp-field: location contacts]</textarea><BR><BR>
+
+[fmp-field: permit req] permits are required for this event.<BR> "YES"<input type="radio" name="Permit Req" value="Yes"> "NO"<input type="radio" name="Permit Req" value="No">
+<BR><BR>
+List Permit information, including fee, office and contact:<BR>
+<textarea name="permit info" rows=4 cols=40>[fmp-field: permit info]</textarea><BR><BR>
+
+[fmp-field: insurance req] insurance is required for this event.<BR> "YES"<input type="radio" name="insurance req" value="Yes"> "NO" <input type="radio" name="insurance req" value="No">
+<BR><BR>
+[fmp-field: secure site] site secured.<BR>
+Yes<input type="radio" name="secure site" value="Yes"> No<input type="radio" name="secure site" value="No"><BR><BR>
+Cross Promotional Notes: <BR><textarea name="crosspromo notes" rows=4 cols=40>[fmp-field: crosspromo notes</textarea><BR><BR>
+
+Miscellaneous notes and additional resources requested: <BR><textarea name="Misc Notes" rows=4 cols=40>[fmp-field: misc notes]
+</textarea>
+<BR><BR>
+Approve this event?<BR>
+<input type="radio" name="corporate ok" value="Yes">Yes<BR>
+<input type="radio" name="corporate ok" value="No">No<BR>
+<BR>
+<INPUT TYPE="submit" NAME="-edit" VALUE="Submit">
+<INPUT TYPE="reset" VALUE="Clear Form">
+</FORM> 
+</font>
+</BODY> 
+</HTML>
+[/FMP-If]

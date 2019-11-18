@@ -1,0 +1,165 @@
+<HTML>
+<HEAD>
+<TITLE>Enter Trade Show Details</TITLE>
+</HEAD>
+<BODY BACKGROUND="images/tanbg.gif" BGCOLOR="#cccc99" TEXT="#000000" LINK="#993300" VLINK="#333333" ALINK="#FF9900">
+<font face="Verdana, Arial, Helvetica" color="#000000" SIZE="-1">
+<H2>Enter Trade Show Details</H2>
+<P><FORM ACTION="FMPro" METHOD="post">
+<P><INPUT TYPE="hidden" NAME="-RecID" VALUE="[FMP-currentrecid]">
+<P><INPUT TYPE="hidden" NAME="-db" VALUE="EventDB.FP3">
+<P><INPUT TYPE="hidden" NAME="-lay" VALUE="Layout #1">
+<P><INPUT TYPE="hidden" NAME="-format" VALUE="thankyou.htm">
+<input type="hidden" name="event type" value="trade show">
+<input type="hidden" name="corporate ok" value="No">
+Select from the list of shows:<select name="trade show">
+	<option>Trade Show 1
+	<option>Trade Show 2
+	<option>Trade Show 3
+</select>
+<BR><BR>
+Enter location information (i.e. Hotel/Convention Center, Room, Address, Phone)<BR>
+<textarea name="trade show location" rows=4 cols=40></textarea>
+<BR><BR>
+<BR>
+<TABLE BORDER=0>
+<TR>
+<TD>Show Date <FONT COLOR="#993300">(mm/dd/yy)</font>:</TD>
+<TD><INPUT TYPE="text" NAME="Date" VALUE=""></TD>
+</TR>
+<TR>
+<TD>Start Time <FONT COLOR="#993300">(00:00 am/pm)</font>: </TD>
+<TD><INPUT TYPE="text" NAME="Start Time" VALUE=""></TD>
+</TR>
+<TR>
+<TD>End Time <FONT COLOR="#993300">(00:00 am/pm)</font>:   </TD>
+<TD><INPUT TYPE="text" NAME="End Time" VALUE=""></TD>
+</TR>
+</TABLE>
+<BR>
+<B>National</B> Ambassador(s) in attendance:<BR>
+Ambassador 1: <select name="National Ambassador 1" size=1>
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+Ambassador 2: <select name="National Ambassador 2" size=1>
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+  <option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+Ambassador 3: <select name="National Ambassador 3" size=1>
+	<option>(none)
+	<option>Fergus Hyke
+	<option>Dean Burke
+	<option>Tod Bartolac
+	<option>Pete Heltne
+	<option>Barret Willett
+	<option>Daryl Potie
+	<option>Mike Reilly
+	<option>Trevor Norris
+	<option>Jason Arrington
+	<option>Jerry Tyler
+</select>
+<BR>
+<BR>
+<B>Regional</B> Ambassador(s) in attendance:<BR>
+Ambassador 1: <select name="Regional Ambassador 1" size=1>
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 2: <select name="Regional Ambassador 2" size=1>
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 3: <select name="Regional Ambassador 3" size=1>
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select><BR>
+Ambassador 4: <select name="Regional Ambassador 4" size=1>
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+Ambassador 5: <select name="Regional Ambassador 5" size=1>
+	<option>(none)
+	<option>1 of 25
+	<option>2 of 25
+	<option>3 of 25
+	<option>4 of 25
+	<option>you get the idea
+</select>
+<BR>
+<BR>
+Sales Rep: <select name="Sales Rep" size=1>
+	<option>none
+	<option>Morgan Turner
+	<option>Jeff Burkley
+	<option>Bruce Simpson
+	<option>Dennis Austin
+	<option>Ed Kearney
+	<option>Eric Weuve
+	<option>Heidi Zimmerman
+	<option>Matt Szura
+	<option>Kurt Watkins
+	<option>Scott McCoubrey
+	<option>Hege Watkins
+	<option>Todd Larsen
+	<option>Vicki Larsen
+	<option>Travis Wiest
+	<option>Glen Morris
+</select>
+<BR><BR>
+Will there will be an athlete appearance: Yes<input type="radio" name="Athlete Appear" value="Yes"> No<input type="radio" name="Athlete Appear" value="No" CHECKED>
+Athlete's name:<input type="text" name="Athlete Name" value="">
+<BR><BR>
+List location contact information:<BR>
+<textarea name="location contacts" rows=4 cols=40></textarea>
+<BR><BR>
+Setup Notes:<BR>
+<textarea name="setup notes" rows=4 cols=40></textarea>
+<BR>
+<BR>
+Show notes and additional resources requested: <BR><textarea name="Misc Notes" rows=4 cols=40>
+</textarea>
+<input type="hidden" name="-MailFrom" value="tim@digital-sherpas.com">
+<input type="hidden" name="-MailTo" value="tim@digital-sherpas.com">
+<input type="hidden" name="-MailSub" value="A new event has been added to the Promotions Database">
+<input type="hidden" name="-MailFormat" value="/k2/k2eventformat.txt">
+<input type="hidden" name="-MailHost" value="207.66.185.23">
+<P><INPUT TYPE="submit" NAME="-new" VALUE="Submit">
+<INPUT TYPE="reset" VALUE="Clear Form">
+</FORM> 
+</BODY> 
+</HTML>

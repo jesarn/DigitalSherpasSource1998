@@ -1,0 +1,44 @@
+<HTML>
+<HEAD>
+<TITLE>Calendar Report</TITLE>
+<BODY BACKGROUND="images/tanbg.gif" BGCOLOR="#cccc99" TEXT="#000000" LINK="#993300" VLINK="#333333" ALINK="#FF9900">
+<font face="Verdana, Arial, Helvetica" color="#000000" SIZE="-1">
+<H2>K2 Event Calendar Report</H2>
+This report will show all approved events.<BR><BR>
+Please select by which criteria the report will be sorted.<BR><BR>
+<FORM ACTION="FMPro" METHOD="post">
+<INPUT TYPE="hidden" NAME="-db" VALUE="EventDB.FP3">
+<INPUT TYPE="hidden" NAME="-lay" VALUE="Layout #1">
+<INPUT TYPE="hidden" NAME="-format" VALUE="ampscalreportresults.htm">
+<INPUT TYPE="hidden" NAME="corporate Ok" value="">
+
+<select name ="-sort">
+	<Option selected>Date
+	<option>Event Type
+	<option>Location
+	<option>Sales Rep
+	<option>National Ambassador
+	<option>Regional Ambassador
+	<option>State
+	<option>Month
+	</select>
+<BR><BR>
+<Input type="submit" name="-findall" value="Find">
+</font>
+<!-- Copyright Information -->
+<CENTER>
+<table border=0 cellspacing=0 cellpadding=0 marginwidth=0 marginheight=0 height=25%>
+<tr>
+<td align=center valign=bottom>
+<font face="Verdana, Arial, Helvetica" color="#000000" SIZE="-2">
+&copy; 1998 K2 Corporation.<br>
+Comments or suggestions? Send them to <A HREF="mailto:k2@digital-sherpas.com">k2@digital-sherpas.com</A>.<BR>
+Site design by <a href="http://www.werkhaus.com" target="_new">Werkhaus Design</a>. Site developed by <a href="http://www.digital-sherpas.com" target="_new">Digital Sherpas</a>.
+<br>
+</font>
+</td>
+</tr>
+</table>
+</CENTER>
+</BODY>
+</HTML>
