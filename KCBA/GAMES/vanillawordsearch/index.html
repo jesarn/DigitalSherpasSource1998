@@ -1,0 +1,119 @@
+<html>
+<title>KCBA Wordsearch</title>
+<body bgcolor=#ffffff>
+
+<p>
+<applet code=Wordsearch8.class width=550 height=350>
+<param name=WORDLIST value="Atascadero ArroyoGrande Avenal Aptos BigSur Cambria Carmel Castroville Coalinga Cayucos DosPalos Firebaugh Gonzalez Gilroy Greenfield Hollister Jolon KingCity LosOsos Marina Mendota Monterey MorrowBay Nipomo Oceano PasoRobles PismoBeach Prunedale Salinas SanArdo SanBenito SanJoaquin SanLucas SanLuisObispo SanSimeon SantaCruz SantaMargarita  Seaside Shandon Soledad Templeton Watsonville">
+<param name=LISTNAME value="Central Coast">
+<param name=COPYRIGHT value="Wordsearch applet, Copyright 1997 Sun Microsystems, Inc., all rights reserved.">
+<param name=DOCUMENTATION value="Documentation found at: http://www.xm.com/cafe/">
+<param name=BGCOLOR value="255, 255, 192">
+<param name=FGCOLOR value="0, 0, 255">
+<param name=CELLSIZE value="16">
+<param name=FONTNAME value="Helvetica">
+<param name=FONTSIZE value="12">
+<param name=FONTSTYLE value="plain">
+<param name=FOUND.SOUND value="glissant1.au">
+<param name=SOLVED.SOUND value="accent1.au">
+<param name=PUZZLE.COLUMNS value="26">
+<param name=PUZZLE.ROWS value="20">
+<param name=PUZZLE.BGCOLOR value="255, 255, 192">
+<param name=PUZZLE.FGCOLOR value="black">
+<param name=PUZZLE.LOOPCOLOR value="blue">
+<param name=PUZZLE.DRAWNLOOPCOLOR value="100, 100, 255">
+</applet>
+
+<p>
+The Java classes needed to implemet this applet are:
+<ul>
+<li>Wordsearch8.class
+<li>WordCanvas.class
+<li>CoolTool3.class
+<li>DetachFrame.class
+</ul>
+<a href=wordsearch.tar>A TAR file of these classes is available.</a>
+
+<h3>Parameters</h3>
+
+The <tt>param</tt> tags are the lines of HTML which customize the applet to your needs. Following is a list of all the parameter options which are currently applicable. Be sure to use double-quotes around the parameter's value if the value contains any whitespace. Most parameters have defaults in case you choose not to specify them... but some parameters <i>must</i> be included.
+<p>
+<li><tt><b>COPYRIGHT</b></tt>: This parameter MUST be included and MUST have a value of:
+<pre>
+"Wordsearch applet, Copyright 1997 Sun Microsystems, Inc., all rights reserved."
+</pre>
+
+<p>
+<li><tt><b>DOCUMENTATION</b></tt>: This parameter MUST be included and MUST have a value of:
+<pre>
+"Documentation found at: http://www.xm.com/cafe/"
+</pre>
+
+<p>
+<li><tt><b>BACKGROUND</b></tt>: This parameter points to an image file which will appear on the puzzle board behind the letters. Be sure to <a href=../faq.html#images>guidelines about images</a> on the FAQ page.
+
+<p>
+<li><tt><b>BGCOLOR</b></tt>: This parameter indicates the background color of the applet's list and buttons (if you want the background color of the board area to be different, use the PUZZLE.BGCOLOR parameter). <a href=../faq.html#colors>See guidelines for colors</a> to learn acceptable values for this parameter.
+
+<p>
+<li><tt><b>CELLSIZE</b></tt>: This parameter indicates the pixel cellsize allocated for each letter in the board of the puzzle. The default is 24.
+
+<p>
+<li><tt><b>FGCOLOR</b></tt>: This parameter indicates the foreground color of the applet's list and buttons (if you want the foreground color of the board area to be different, use the PUZZLE.FGCOLOR parameter). <a href=../faq.html#colors>See guidelines for colors</a> to learn acceptable values for this parameter.
+
+<p>
+<li><tt><b>FONTNAME</b></tt>: This parameter indicates font face used in the puzzle. Be sure to <a href=../faq.html#fonts>read the FAQ section on fonts</a>.
+
+<p>
+<li><tt><b>FONTSIZE</b></tt>: This parameter indicates font size used in the puzzle. Be sure to <a href=../faq.html#fonts>read the FAQ section on fonts</a>.
+
+<p>
+<li><tt><b>FONTSTYLE</b></tt>: This parameter indicates font style used in the puzzle. Be sure to <a href=../faq.html#fonts>read the FAQ section on fonts</a>.
+
+<p>
+<li><tt><b>FOUND.SOUND</b></tt>: This parameter points to a sound file which is played whenever a word is successfully circled. Be sure to <a href=../faq.html#sounds>read the FAQ section of sound files</a>. The default is that no sound is used.
+
+<p>
+<li><tt><b>LISTNAME</b></tt>: This parameter is simply a title or category which the hidden words all fall under. The default is just the term, "WORDSEARCH".
+
+<p>
+<li><tt><b>PUZZLE.DRAWNLOOPCOLOR</b></tt>: This parameter indicates the color of the loops which circle words after they have been drawn. <a href=../faq.html#colors>See guidelines for colors</a> to learn acceptable values for this parameter. The default color is black.
+
+<p>
+<li><tt><b>PUZZLE.BGCOLOR</b></tt>: This parameter indicates the background color of the applet's actual board where the hidden words appear. <a href=../faq.html#colors>See guidelines for colors</a> to learn acceptable values for this parameter. The default color is to use the value of the BGCOLOR parameter.
+
+<p>
+<li><tt><b>PUZZLE.COLUMNS</b></tt>: This parameter indicates the number of columns of letters used in the main board. The default is 10.
+
+<p>
+<li><tt><b>PUZZLE.FGCOLOR</b></tt>: This parameter indicates the foreground color of the applet's actual board where the hidden words appear. <a href=../faq.html#colors>See guidelines for colors</a> to learn acceptable values for this parameter. The default color is to use the value of the FGCOLOR parameter.
+
+<p>
+<li><tt><b>PUZZLE.LOOPCOLOR</b></tt>: This parameter indicates the color of the loops which circle words as they are being drawn. <a href=../faq.html#colors>See guidelines for colors</a> to learn acceptable values for this parameter. The default color is yellow.
+
+<p>
+<li><tt><b>PUZZLE.ROWS</b></tt>: This parameter indicates the number of rows of letters used in the main board. The default is to use the value of the PUZZLE.COLUMNS parameter.
+
+<p>
+<li><tt><b>SOLVED.SOUND</b></tt>: This parameter points to a sound file which is played whenever all of the words have been found (the puzzle is solved). Be sure to <a href=../faq.html#sounds>read the FAQ section of sound files</a>. The default is that no sound is used.
+
+<p>
+<li><tt><b>WORDLIST</b></tt>: This parameter lists words which are to be hidden in the puzzle. Entries should be separated by whitespace (thus individual entries should not have spaces). The applet will try to hide as many of the words as possible starting with the first and moving down the list. However it will stop placing words if it finds the constraints (ROWS/COLUMNS) of the too small.
+
+<hr>
+
+-- Comments and suggestions are welcome: <a href=mailto:eric.harshbarger@sun.com>eric.harshbarger@sun.com</a>, address Eric Harshbarger
+<br>
+(Please be sure to <a href=../faq.html>read the FAQ page</a> before sending email).
+
+<hr>
+<tt>[<a href=../index.html>CAF&#201</a>] - [<a href=../applets.html>APPLETS</a>] - [<a href=../faq.html>FAQ</a>] - [<a href=../resources.html>RESOURCES</a>]</tt>
+<hr>
+
+The Wordsearch applet may be used freely by anyone. Neither <a href=http://www.sun.com>Sun Microsystems, Inc.</a> nor <a href=http://www.ericharshbarger.org/>Eric C. Harshbarger</a> is responsible for any problems resulting from the malfunction, use, or misuse of this applet.
+<p>
+&copy Copyright 1997, Sun Microsystems, Inc.
+<hr>
+
+</body>
+</html>

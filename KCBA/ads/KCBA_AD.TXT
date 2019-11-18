@@ -1,0 +1,27 @@
+# Format is:
+#	
+#	{
+#		URL to image
+#		URL this image should link to
+#		URL to an audio file
+#	}
+
+{
+        http://gm.preferences.com/image.ng;spacedesc=CMINet1_KCBA_234x60_RunOfSite_Any
+	gm_ad.asp
+}
+
+{
+        images/games.gif
+	http://kcbatv.com/fun
+}
+
+{
+	images/classifieds.gif
+	http://kcbatv.com/theconnection
+}
+
+{
+	images/postcard.gif
+	http://kcbatv.com/postcard
+}

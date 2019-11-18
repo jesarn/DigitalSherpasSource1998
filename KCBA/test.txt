@@ -1,0 +1,2 @@
+This headline is coming from the TEXTFILE parameter. Note that the messages from this parameter come after any messages defined by TEXT.0, TEXT.1,... parameters. In the text file, a headline should be restricted to one line with any URL separated by a final comma., null
+This does not prevent the headline from having commas, however... as the applet looks for the final comma. If, you have a headline with commas and DON'T want a URL associated with it (like this headline)... end the entry with ', null', null

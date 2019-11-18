@@ -1,0 +1,161 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+<HEAD>
+	<TITLE>KCBA</TITLE>
+<!--#include file="../style.inc"-->
+</HEAD>
+
+<BODY TEXT="#000000" VLINK="#1C0058" LINK="#005B91" ALINK="#FF0000" BGCOLOR="#FFFFFF">
+<TABLE BORDER=0 ALIGN="LEFT" WIDTH="100%">
+
+<TR><TD class=a>
+<IMG SRC="../images/programming.GIF" WIDTH=284 HEIGHT=32 BORDER=0 alt=""><BR><BR>
+<strong>Tonight:</strong><br>
+<% if day(date) = 7 then %>
+<TABLE ALIGN="LEFT"><TR><TD class=a>
+<img src="http://207.66.185.129/kcba/images/cops.jpg" ALIGN="left" HSPACE="3">
+<STRONG>Cops</STRONG> @ 8:00<BR>
+
+
+In Kansas City, officers respond to a shooting incident in which a man
+                        claims he acted in self-defense during an alleged robbery. Officers
+                        investigate the alleged theft of a cigarette lighter by a young boy, and
+                        an officer aids in the arrest of a man who allegedly attacked a female
+                        victim on the COPS episode Saturday, March 7 (8:00-8:30 PM ET/PT)
+                        on FOX. (CP-1021) (TV-PG; L, V) <BR><BR>
+
+<BR><BR>
+
+
+
+
+</TD></TR></TABLE>
+
+
+</TD></TR>
+
+
+<!-- Program 2 -->
+
+<TR><td align="RIGHT">
+<TABLE ALIGN="RIGHT"><TR><TD class=a>
+
+<img src="http://207.66.185.129/kcba/images/cops.jpg" ALIGN="right" HSPACE="3">
+<STRONG>Cops</STRONG> @ 8:30<BR>
+
+
+                        In Las Vegas, police set up a bike sting and uncover an alleged
+                        shoplifting incident. An officer stops a truck believed to be carrying
+                        stolen plates. Another officer responds to a call about an accidental
+                        family shooting in the COPS episode Saturday, March 7 (8:30-9:00
+                        PM ET/PT) on FOX. (CP-1002) (TV-PG; L) (OAD: 9-13-97) <BR><BR>
+
+<BR><BR>
+
+
+
+
+
+
+</TD></TR></TABLE>
+</TD></TR>
+
+
+<!-- Program 3 -->
+
+<TR><td align="LEFT">
+<TABLE ALIGN="LEFT"><TR><TD class=a>
+
+<img src="http://207.66.185.129/kcba/images/amw.jpg" ALIGN="left" HSPACE="3">
+<STRONG>America's Most Wanted</STRONG> @ 9:00<BR>
+
+
+                        What goes on inside the criminal mind? AMERICA'S MOST
+                        WANTED: AMERICA FIGHTS BACK goes straight to the source to
+                        find out why killers kill. Criminologists claim they know how the
+                        deviant mind works, but do they? Tune in and see what the criminals
+                        themselves have to say about their shocking crimes Saturday, March
+                        7 (9:00-10:00 PM ET/PT) on FOX. (MW-1122) (TV-PG; V) <BR><BR>
+</td></tr></table>
+<% else %>
+<TABLE WIDTH=100%>
+<!-- Program 1 -->
+<% showlink = "-DB=kcbaprogramming.fp3&-Format=feature1.htm&id=prime1&-SortField=sort_field&date=" & date() & "&-Max=50&-Find"
+Set HttpObj = Server.CreateObject("AspHTTP.Conn")
+HttpObj.Url = "http://207.66.185.129/kcba/FMPro?"
+HttpObj.PostData = showlink
+HttpObj.TimeOut = 10
+HttpObj.RequestMethod = "POST"
+ProgramstrResult = HttpObj.GetURL 
+
+errormessagepos = InStr(UCase(ProgramstrResult),  "<HTML>")
+if errormessagepos then %>
+
+<% else %>
+<TR><td align="LEFT">
+<%= ProgramstrResult %>
+</TD></TR>
+<% End If %>
+
+<!-- Program 2 -->
+<% showlink = "-DB=kcbaprogramming.fp3&-Format=feature2.htm&id=prime2&date=" & date() & "&-SortField=sort_order&-Max=50&-Find"
+Set HttpObj = Server.CreateObject("AspHTTP.Conn")
+HttpObj.Url = "http://207.66.185.129/kcba/FMPro?"
+HttpObj.PostData = showlink
+HttpObj.TimeOut = 10
+HttpObj.RequestMethod = "POST"
+ProgramstrResult = HttpObj.GetURL 
+
+errormessagepos = InStr(UCase(ProgramstrResult),  "<HTML>")
+if errormessagepos then %>
+
+<% else %>
+<TR><td align="RIGHT">
+<%= ProgramstrResult %>
+</TD></TR>
+<% End If %>
+
+<!-- Program 3 -->
+<% showlink = "-DB=kcbaprogramming.fp3&-Format=feature3.htm&id=prime3&-SortField=sort_order&date=" & date() & "&-Max=50&-Find"
+Set HttpObj = Server.CreateObject("AspHTTP.Conn")
+HttpObj.Url = "http://207.66.185.129/kcba/FMPro?"
+HttpObj.PostData = showlink
+HttpObj.TimeOut = 10
+HttpObj.RequestMethod = "POST"
+ProgramstrResult = HttpObj.GetURL 
+
+errormessagepos = InStr(UCase(ProgramstrResult),  "<HTML>")
+if errormessagepos then %>
+
+<% else %>
+<TR><td align="LEFT">
+<%= ProgramstrResult %>
+</TD></TR>
+<% End If %>
+</Table>
+<br><br>
+<% end if %>
+<center><p><strong>What's on Tonight</strong></p></center>
+<% showlink = "-DB=kcbaprogramming.fp3&-Format=programming.htm&id=prime&date=" & date() & "&-SortField=sort_order&-Max=50&-Find"
+Set HttpObj = Server.CreateObject("AspHTTP.Conn")
+HttpObj.Url = "http://207.66.185.129/kcba/FMPro?"
+HttpObj.PostData = showlink
+HttpObj.TimeOut = 10
+HttpObj.RequestMethod = "POST"
+ProgramstrResult = HttpObj.GetURL %>
+
+<%= ProgramstrResult %>
+
+<h3><a href="programming.asp">Complete Listing of Today's Programming</a></h3>
+<br><br>
+<center><h3>Weeknights Be a Member<br>of the KCBA Comedy Club!</h3>
+<img src="../images/club_l.jpg" width=450 height=181 alt="" border="0"><br><br>
+<em>KCBA is not responsible for belly aches caused by excessive laughter.</em><br></center>
+
+
+<tr><td><br><br><br><br><!--#include file="../footer.inc"--></td></tr>
+</TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,6 @@
+ad1=/ad/sponsors/in_house/sportszone/scorepost/sz_sp_int002.gif,http://espn.sportszone.com/cgi/atransfer?goto=http://espnet.sportszone.com/nba/today/3Dstats/about.html&name=sz_sp_int002.gif
+ad2=/ad/sponsors/in_house/sportszone/scorepost/sz_sp_nba004.gif,http://espn.sportszone.com/cgi/atransfer?goto=http://espn.sportszone.com/liveaudio/nba/1998/today/index.html&name=sz_sp_nba004.gif
+ad3=/ad/sponsors/in_house/sportszone/sz_sp_espn001.gif,http://espn.sportszone.com/cgi/atransfer?goto=https://commerce.cdsfulfillment.com/ESN/subscriptions.cgi%3fIN_Code=I8BASA&name=sz_sp_espn001.gif
+
+
+

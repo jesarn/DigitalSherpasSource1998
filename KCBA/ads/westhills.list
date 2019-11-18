@@ -1,0 +1,19 @@
+# Format is:
+#	
+#	{
+#		URL to image
+#		URL this image should link to
+#		URL to an audio file
+#	}
+
+{
+        /ads/images/shorelinesub.gif
+	http://www.shorelinesubaru.com/
+}
+
+{
+        /ads/images/westhillshonda.gif
+	http://www.westhillshonda.com/
+}
+
+

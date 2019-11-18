@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+<HEAD>
+<TITLE>KCBA FIRST AT TEN, Tuesday, 12/9/97</TITLE>
+<!--#include file="../style2.inc" -->
+</HEAD>
+
+<BODY TEXT="#000000" VLINK="#1C0058" LINK="#005B91" ALINK="#FF0000" BGCOLOR="#FFFFFF">
+<A NAME=StoryIndex>
+<CENTER><FONT SIZE=+2><B>KCBA FIRST AT TEN, Tuesday, 12/9/97</B></CENTER></TD>
+</TABLE>
+
+<TABLE WIDTH=100% BORDER=0 >
+<TR><TD CLASS="a" ><IMG SRC=script.gif ALIGN=LEFT HSPACE=5><A HREF=#132Crimestop-Mooren-I>Crimestop-Mooren-I</A></TD>
+<TD CLASS="a" ><IMG SRC=script.gif ALIGN=LEFT HSPACE=5><A HREF=#129Crimestop-Mooren-T>Crimestop-Mooren-T</A></TD>
+
+</Table>
+<A HREF=../main.asp>Return to KCBA home page</A><BR>
+</CENTER><HR><BR>
+<A NAME=132Crimestop-Mooren-I>
+<TABLE WIDTH=100% BORDER=0>
+<TR><TD CLASS="a" VALIGN=top WIDTH=30%><IMG SRC=script.gif ALIGN=left HSPACE=5><B>Crimestop-Mooren-I</B><BR>
+<FONT SIZE=-2><A HREF=#StoryIndex>Return to index of stories...</FONT></A>
+</TD>
+<TD CLASS="a"><FONT SIZE=-1>WHEN STARR MOOREN WAS KILLED IN HER MONTEREY HOME LAST DECEMBER.DETECTIVES HOPED FOR A QUICK END TO THE CASE.<BR>
+BUT NOW ONE YEAR LATER.THE MURDER REMAINS UNSOLVED.<BR>
+TONIGHT CRIMESTOPPERS IS ASKING FOR YOUR HELP TO CATCH A KILLER.<BR>
+
+</TD>
+</TABLE>
+<A NAME=129Crimestop-Mooren-T>
+<TABLE WIDTH=100% BORDER=0>
+<TR><TD CLASS="a" VALIGN=top WIDTH=30%><IMG SRC=script.gif ALIGN=left HSPACE=5><B>Crimestop-Mooren-T</B><BR>
+<FONT SIZE=-2><A HREF=#StoryIndex>Return to index of stories...</FONT></A>
+</TD>
+<TD CLASS="a"><FONT SIZE=-1>AND REMEMBER.YOU CAN CALL THE CRIMESTOPPERS LINE ANYTIME AND FOR ANY CRIME.THERE'S ALWAYS AN OPERATOR ON DUTY.<BR>
+
+</TD>
+</TABLE>
+<CENTER>
+<A HREF=../main.asp>Return to KCBA home page</A><BR>
+<FONT SIZE=1>
+<!--#include file="../footer.inc" -->
+</BODY>
+</HTML>

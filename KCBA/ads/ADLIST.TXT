@@ -1,0 +1,22 @@
+# Format is:
+#	
+#	{
+#		URL to image
+#		URL this image should link to
+#		URL to an audio file
+#	}
+
+{
+        slogo.gif
+	http://www.orbital.co.uk/
+}
+
+{
+        slogo.gif
+	http://www.orbital.co.uk/
+}
+
+{
+        slogo.gif
+	http://www.orbital.co.uk/
+}
