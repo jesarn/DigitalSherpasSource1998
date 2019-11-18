@@ -1,0 +1,34 @@
+[MakeVariable]
+Variable=%mailfrom
+UseFieldValue=mailfrom
+
+[MakeStringVariable]
+Variable=#name
+UseFieldValue=name
+
+[MakeStringVariable]
+Variable=#song
+UseFieldValue=song
+
+[MakeStringVariable]
+Variable=#artist
+UseFieldValue=artist
+
+[MakeStringVariable]
+       InputFile=7at7.tpl
+       Variable=#formdata
+
+[FormDataToString]
+       String=#formdata
+       Variable=#emaildata
+
+[MailMessage]
+       MailServer=mail.digital-sherpas.com
+       To=7at7@digital-sherpas.com
+       From=%mailfrom
+       Subject=Heavy 7 at 7 Request
+       String=#emaildata
+
+[ReturnURL]
+URL=http://www.kube93.com/
+String=main/showtunes/7at7/7at7thanks.htm

@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 2.0">
+<title>KUBE 93's InterActive Website!</title>
+<!--########################################################
+//-Client: KUBE 93.3fm - Seattle
+//-Created by: Digital-Sherpas (www.digital-sherpas.com)
+//-Date: 2.98
+//-Site-Section: Main Page
+//-Version: v.1.0
+//-Developer: Steve Karr (steve@digital-sherpas.com)
+//-Version: v.1.01
+//-Developer: Danny Mavromatis (danny@digital-sherpas.com)
+//##########################################################-->
+<!-- CODE TO DETECT TYPE OF BROWSER FOR FLASH SPLASH PAGE -->
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (navigator.userAgent.indexOf("Mozilla/4.0b") != -1)
+{
+   location.replace("main/beta.html");
+}
+
+var expdate = new Date ();
+expdate.setTime (expdate.getTime() + (30 * 24 * 60 * 60 * 1000)); // 30 days from now
+
+function enterSite(changeLink)
+{
+   SetCookie ("plugs", "yes", expdate);
+   changeLink.href = "main/noplug.htm";
+}
+
+function getCookieVal (offset)
+{
+   var endstr = document.cookie.indexOf (";", offset);
+   if (endstr == -1)
+      endstr = document.cookie.length;
+   return unescape(document.cookie.substring(offset, endstr));
+}
+
+function GetCookie (name)
+{
+   var arg = name + "=";
+   var alen = arg.length;
+   var clen = document.cookie.length;
+   var i = 0;
+   while (i < clen)
+   {
+      var j = i + alen;
+      if (document.cookie.substring(i, j) == arg)
+         return getCookieVal (j);
+      i = document.cookie.indexOf(" ", i) + 1;
+      if (i == 0) break; 
+   }
+   return null;
+}
+
+function SetCookie (name, value)
+{
+   var argv = SetCookie.arguments;
+   var argc = SetCookie.arguments.length;
+   var expires = (argc > 2) ? argv[2] : null;
+   var path = (argc > 3) ? argv[3] : null;
+   var domain = (argc > 4) ? argv[4] : null;
+   var secure = (argc > 5) ? argv[5] : false;
+   document.cookie = name + "=" + escape (value) +
+      ((expires == null) ? "" : ("; expires=" + expires.toGMTString())) +
+      ((path == null) ? "" : ("; path=" + path)) +
+      ((domain == null) ? "" : ("; domain=" + domain)) +
+      ((secure == true) ? "; secure" : "");
+}
+
+
+function display_site()
+{
+   document.write('<FRAMESET BORDER=0 BORDER=NO FRAMEBORDER=0 FRAMESPACING=0 margainheight=0 margainwidth=0 BORDERCOLOR="#000000" ROWS="*,0">');
+   document.write('<FRAME border="0" border="no" SRC="index.html" NAME="index" NORESIZE SCROLLING="no" MARGINHEIGHT="0" MARGINWIDTH="0">');
+   document.write('<FRAME border="0" border="no" SRC="main/blank.htm" NAME="blank" NORESIZE SCROLLING="no" MARGINHEIGHT="0" MARGINWIDTH="0">');
+   document.write('</frameset>');
+
+   usingFrames = true;
+   document.write('<NOFRAME>');
+}
+
+// -->
+</SCRIPT>
+
+</HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+var usingFrames = false;
+// first check if we should let active-x handle it all...
+if ((navigator.appName.indexOf("Microsoft") != -1 && 
+     navigator.userAgent.indexOf("Windows 3.1") == -1 &&
+     navigator.userAgent.indexOf("mac") == -1) ||
+
+// this verifies flash AND director plugins are installed
+     ((navigator.mimeTypes && navigator.mimeTypes["application/futuresplash"] &&
+     navigator.mimeTypes["application/futuresplash"].enabledPlugin) ||
+
+     (navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"] &&
+     navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin)) &&
+
+     (navigator.mimeTypes["application/x-director"] && 
+     navigator.mimeTypes["application/x-director"].enabledPlugin))
+{
+//   SetCookie ("plugs", "yes", expdate);
+   display_site();
+
+} else if (navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"] && 
+  navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin) {
+      display_site(); 
+
+} else {
+//   if(GetCookie("plugs") && ((navigator.userAgent.indexOf("Mozilla/2") != -1) || (navigator.userAgent.indexOf("mac") != -1))) {
+   if(GetCookie("plugs")) {
+      display_site();
+   }
+}
+
+// -->
+</SCRIPT>
+
+<body bgcolor="#000000" text="#FFFFFF" link="#F9AB31"
+vlink="#F9AB31" alink="#F9AB31">
+<div align="center"><center>
+
+<table border="0" width="525">
+    <tr>
+        <td align="center" colspan="2"><p align="center"><a
+        href="index.html"><img src="live2.gif"
+        alt="KUBE 93 - CLICK HERE TO ENTER" border="0"
+        width="306" height="128"></a></p>
+        <p align="center"><font color="#C0C0C0" face="Arial"><img
+        src="graphics/copy_index.gif"
+        alt="Welcome to KUBE 93's Interactive Website! Since we are using the latest technology available we recommend that you have the latest Internet Browser, RealMedia and FLASH player before entering this site. To download these FREE plug-ins click on the buttons below. Otherwise, click on the KUBE Logo to enter..."
+        width="450" height="75"></font></p>
+        <div align="center"><center><table border="0"
+        cellpadding="4" cellspacing="5">
+            <tr>
+                <td align="center"><font
+                color="#FF9D3C" size="1" face="Arial"><a
+                href="http://www.real.com/products/player/index.html?wp=dl0398frame&amp;src=downloadh"><img
+                src="graphics/getplayer.gif"
+                alt="GET THE REAL PLAYER" border="0" width="88"
+                height="31"></a><br>
+                <a
+                href="http://service.real.com/help/faq/p5manual.html#download"><font
+                color="#FF9D3C" size="1" face="Arial">REALPLAYER
+                HELP</font></a></td>
+                <td>&nbsp;</td>
+                <td align="center"><a
+                href="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"><img
+                src="graphics/get_shockwave_flash.gif"
+                alt="GET SHOCKWAVE FLASH" border="0" width="88"
+                height="31"></a><br>
+                <a
+                href="http://www.macromedia.com/shockwave/download/instructions/generic.html"><font
+                color="#FF9D3C" size="1" face="Arial">FLASH HELP</font></a></font></td>
+            </tr>
+        </table>
+        </center></div><div align="center"><center><table
+        border="0" width="70%">
+            <tr>
+                <td><p align="left"><font color="#FFFFFF"
+                size="2" face="arial, charcoal, helvetica"><strong><br>
+                <img src="graphics/aol_logo.gif" alt="AOL"
+                width="15" height="13"></strong> </font><font
+                color="#C0C0C0" size="2"
+                face="arial, charcoal, helvetica">AOL users may
+                get specific instructions on how to view the site
+                by </font><a href="aolindex.html"><font
+                color="#FF9D3C" size="2"
+                face="arial, charcoal, helvetica">clicking here</font></a><font
+                color="#C0C0C0" size="2"
+                face="arial, charcoal, helvetica">. </font></p>
+                <p align="left"><img src="graphics/ie_logo.gif"
+                align="texttop" width="18" height="17"> <font
+                color="#C0C0C0" size="2"
+                face="arial, charcoal, helvetica">IE 3.0 users</font><font
+                color="#FFFFFF" size="2"
+                face="arial, charcoal, helvetica"> </font><a
+                href="iehelp.htm"><font color="#FF9D3C" size="2"
+                face="arial, charcoal, helvetica">click here</font></a><font
+                color="#C0C0C0" size="2"
+                face="arial, charcoal, helvetica"> for help.</font></p>
+                <p align="left"><font color="#C0C0C0"
+                face="Arial"><img src="graphics/webtv.gif"
+                alt="WEBtv" align="absbottom" width="40"
+                height="18"></font><font color="#C0C0C0" size="2"
+                face="Arial"><strong> </strong>users we are a few
+                weeks away from making this site accessible to
+                you. If you would like to be notified when this
+                option becomes available, please </font><a
+                href="mailto:danny@digital-sherpas.com"><font
+                color="#FF9D3C" size="2" face="Arial">email</font></a><font
+                color="#C0C0C0" size="2" face="Arial"> us.</font></p>
+                </td>
+            </tr>
+        </table>
+        </center></div><div align="center"><center><table
+        border="0">
+            <tr>
+                <td width="200"><p align="center"><font
+                color="#FFFFFF" size="1" face="Arial"><br>
+                This website created and maintained by DIGITAL
+                SHERPAS<br>
+                </font><a
+                href="http://www.kube93.com/credits.htm"
+                alt="Digital Sherpas"><font color="#FF9D3C"
+                size="1" face="Arial">©1998. All rights
+                reserved.</font></a></p>
+                </td>
+                <td><p align="center"><a
+                href="http://www.digital-sherpas.com"><font
+                color="#FFFFFF" size="1" face="Arial"><img
+                src="graphics/ds_sm.GIF" alt="Digital Sherpas"
+                border="0" width="56" height="48"></font></a></p>
+                </td>
+            </tr>
+        </table>
+        </center></div></td>
+    </tr>
+</table>
+</center></div>
+
+<p align="center">&nbsp;</p>
+
+<p align="center">&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 2.0">
+<title>Full details about marquee applet:</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<p align="center"><font size="4">Here is detail description of
+&quot;headline.class&quot; Applet usage (you should know basics
+about how to include applets in your html files). You have to
+have two other classes to make this one working: Delimiter.class
+and HeadlineTokenizer.class</font></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td><strong>&lt;applet code=newsfile.class width=200
+        height=200 &gt;</strong></td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td width="90%"><font size="4"><strong>newsfile.class</strong></font><font
+        size="3"> should be in lower case. </font><font size="4"><strong>width</strong></font>
+        and <font size="4"><strong>height</strong></font> are
+        very important mandatory parameters: they define the size
+        of the Applet (in pixels). Do not forget to include <font
+        size="4"><strong>codebase</strong></font> if you put <font
+        size="4"><strong>newsfile</strong></font><strong>.</strong><font
+        size="4"><strong>class</strong></font><strong> </strong>file
+        in different directory than your source html file
+        directory.<br>
+        <em><strong>Tip:</strong></em><em> if you want to put
+        some image as background for your Applet, usually you'll
+        set </em><font size="4"><strong>wigth</strong></font><em>
+        and </em><font size="4"><strong>height</strong></font><em>
+        equal to the dimension of your image, otherwise you'll be
+        able to see only part of your image (of course you can do
+        it intentionally).</em> </td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td><strong>&lt;param name=x value=0&gt;<br>
+        &lt;param name=y value=0&gt;<br>
+        &lt;param name=outputwidth value=200&gt;<br>
+        &lt;param name=outputheight value=200&gt;</strong></td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td width="50">&nbsp;</td>
+        <td width="90%">Those four parameters define the location
+        an size (in pixels) of output area inside of the Applet.
+        They are self-explanatory: <font size="4"><strong>x</strong></font><strong>
+        </strong>and <font size="4"><strong>y</strong></font><strong>
+        </strong>are left-upper corner , <strong>outputwidth</strong>
+        and <strong>outputheight</strong> are respectiveley width
+        and height of the output area.You output strings will be
+        centered inside of this area. You can apply your common
+        sense to set them up right: <font size="4"><strong>x</strong></font>+<font
+        size="4"><strong>outputwidth</strong></font> and <font
+        size="4"><strong>y</strong></font>+<font size="4"><strong>outputheight</strong></font>
+        should not be more than respectively <font size="4"><strong>width</strong></font>
+        and <font size="4"><strong>height</strong></font> of the
+        Applet (if they are, <font size="4"><strong>outputwidth</strong></font>
+        will be set up as <font size="4"><strong>width - x</strong></font>
+        and <font size="4"><strong>outputheight</strong></font>
+        will be equal <font size="4"><strong>height - y</strong></font>).
+        If you do not include some of them (or all of them)
+        Applet will use default values: <font size="4"><strong>x=0,
+        y=0, outputwidth=width, outputheight=height.</strong></font><font
+        size="3"> Applet will change to those default values any
+        wrong value it has gotten from you. It means that if you
+        see your output string running at different area than you
+        wanted, check out your coordinates: maybe your </font><font
+        size="4"><strong>x</strong></font><font size="3"> is more
+        than </font><font size="4"><strong>width</strong></font><font
+        size="3"> or </font><font size="4"><strong>y</strong></font><font
+        size="3"> is more than </font><font size="4"><strong>height</strong></font><font
+        size="3">, etc. </font>Such &quot;double&quot; coordinate
+        system gives you full control over location and size of
+        the Applet itself (<font size="4"><strong>width</strong></font>
+        and <font size="4"><strong>height</strong></font>) and
+        location and size of your output strings and lets you
+        create, for instance, your own background images with
+        special place for output strings (see examples). <font
+        size="3">Another thing: if you included </font><font
+        size="4"><strong>outputheight</strong></font><font
+        size="3"> parameter which is not equal 0 and its value is
+        less than height of the font (either defaut or chosen by
+        you), </font><font size="4"><strong>outputheight</strong></font><font
+        size="3"> will be increased up to Font height. The result
+        is very useful <em><strong>Tip</strong></em><em>:</em> <em>if
+        you want </em></font><font size="4"><em>outputheight</em></font><font
+        size="3"><em> to be equal to the Font height, set it up
+        as 1 (if you set it up as 0 or do not include it at all,
+        it will be set up equal to the Applet's height). </em></font></td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td><strong>&lt;param name=filename
+        value=&quot;filename.txt&quot;&gt;</strong></td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td width="50">&nbsp;</td>
+        <td width="90%">Put here the location and name for your
+        Data File (apply usual rules: &quot;..&quot; for one
+        directory up, &quot;/&quot; as separator and so forth).
+        Data file shoud be in ASCII format (it means usual text
+        file, what you create with Notepad) and should be <strong>on
+        the same host</strong> as your source file and the Applet
+        and should have appropriate access permissions, otherwise
+        any applet will not be able to load this file. <br>
+        <br>
+        Title1 | Your output string number 1<br>
+        Title 2| Your output string number 2<br>
+        Tile 3 |Your output string number 3<br>
+        Title 4Your output string number 4<br>
+        </td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td><strong>&lt;param name=fontname value=Courier&gt;<br>
+        &lt;param name=fontsize value=15&gt;<br>
+        &lt;param name=bold value=1&gt;<br>
+        &lt;param name=italic value=1&gt;<br>
+        &lt;param name=forered value=255&gt;<br>
+        &lt;param name=foregreen value=0&gt;<br>
+        &lt;param name=foreblue value=255&gt;</strong></td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td width="50">&nbsp;</td>
+        <td width="90%">Those settings will let you choose type,
+        size and color of your font. Do not use them if system
+        font is good enough for you. <font size="4"><strong>fontname</strong></font>
+        is a <font size="4"><strong>logical</strong></font> name
+        of font. Logical means that there are some predefined
+        names, which are close, but not the same, for different
+        platform. Usual values are: <em><strong>Dialog</strong></em>,
+        <em><strong>Courier</strong></em>, <em><strong>Helvetica</strong></em>,
+        <em><strong>DialogInput</strong></em>, <em><strong>TimesRoman</strong></em>.
+        You can use <strong>fontlist.class</strong> applet to
+        check out logical font names you have on your system. <font
+        size="4"><strong>fontsize</strong></font> is size of the
+        font in points (usual values between 10 and 12). Set up <font
+        size="4"><strong>bold</strong></font> and <font size="4"><strong>italic</strong></font>
+        parameters as 1 if you want your font in bold or italic. <font
+        size="4"><strong>forered, foregreen and foreblue</strong></font>
+        let you specify the RGB value of color for your font. You
+        have to include <strong>all three parameters with valid
+        values</strong> (from 0 to 255) if you want to change
+        default color of your output string. If you set up even
+        one value wrong, for example like foregreen=256, color of
+        font will not be changed. Before trying to use your font,
+        the Applet will get all fonts for every particular system
+        it's running and if it does not find matching entry, it
+        uses default font.</td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td><strong>&lt;param name=backred value=0&gt;<br>
+        &lt;param name=backgreen value=0&gt;<br>
+        &lt;param name=backblue value=255&gt;</strong></td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td width="50">&nbsp;</td>
+        <td width="90%">Those parameters will let you set up the
+        RGB value of color for the Applet background. Usually
+        you'll omit these values if you have background image
+        (but not necessarily - if image dimension is less that
+        the Applet's one, you'd better set up some background to
+        make it look nice and the same for diffeerent browser,
+        because default background color differs from browser to
+        browser (usually lightgray or white) - see example of
+        using background color as well as image). Again, you have
+        to include <strong>all three parameters with valid values</strong>
+        (from 0 to 255) if you want to change background color of
+        the Applet. If you set up even one value wrong,
+        background color will not be changed.</td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td><strong>&lt;param name=image
+        value=&quot;back.gif&quot;&gt;</strong></td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td width="50">&nbsp;</td>
+        <td width="90%"><font size="4"><strong>image</strong></font>
+        parameter lets you specify <strong>gif</strong> or <strong>jpg</strong>
+        file as background for the Applet. The file should be on <strong>the
+        same host</strong> as your html source file and should
+        have appropriate access permissions, otherwise any applet
+        will not be able to load this file. You can use <strong>..
+        </strong>symbols (two dots) as one directory up, like: <strong>value=&quot;../../somefile.gif&quot;</strong>
+        to look for file <strong>somefile.gif</strong> two
+        directory up from <strong>current location of your source
+        html file</strong>.</td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td><strong>&lt;param name=typespeed value=2&gt;</strong></td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td width="50">&nbsp;</td>
+        <td width="90%"><strong>typespeed</strong> could be
+        anywhere between 1 and 10 and this parameter defines
+        speed of bottom line typing. Defaul value is 5, 1 is
+        slowest speed, 10 is fastest. Step of speed increasing is
+        equal 15 milliceconds. .</td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td><strong>&lt;param name=url
+        value=&quot;http://www.whatever.com&quot; &gt;</strong></td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td width="50">&nbsp;</td>
+        <td width="90%">This is an URL address where user can go
+        to by clicking inside of your output area defined by <font
+        size="4"><strong>x,y,outputwidth </strong></font><font
+        size="3">and</font><font size="4"><strong> outputheight</strong></font><font
+        size="3"> (see full description above)</font></td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td width="50">&nbsp;</td>
+        <td width="90%">&nbsp;</td>
+    </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</body>
+</html>

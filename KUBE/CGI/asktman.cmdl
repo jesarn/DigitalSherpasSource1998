@@ -1,0 +1,27 @@
+[MakeStringVariable]
+Variable=#from
+UseFieldValue=From
+
+[MakeStringVariable]
+Variable=#letter
+UseFieldValue=letter
+
+[MakeStringVariable]
+       InputFile=tmanformat.tpl
+       Variable=#formdata
+
+[FormDataToString]
+       String=#formdata
+       Variable=#emaildata
+
+[MailMessage]
+       MailServer=mail.digital-sherpas.com
+       To=robtep@seanet.com
+       From=kube@digital-sherpas.com
+       Subject=Ask T-Man
+       String=#emaildata
+
+[ReturnURL]
+URL=http://www.digital-sherpas.com/
+String=kube/comp/main/showtunes/asktman/tmanthanks.htm
+

@@ -1,0 +1,126 @@
+<HTML>
+<HEAD>
+<TITLE>Shockwave</TITLE>
+</HEAD>
+<BODY bgcolor="#000099">
+
+<!-- Aftershock 7@7.spl 3=425 4=250 9=72 18 24=3 33 38 27 28=http://www.kube93.com/flash/flashplayer/ -->
+
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+var FlashMode = 0
+if (navigator.mimeTypes && navigator.mimeTypes["application/futuresplash"] && 
+  navigator.mimeTypes["application/futuresplash"].enabledPlugin) {
+	FlashMode = 1;
+} else if (navigator.appName && navigator.appName.indexOf("Microsoft") != -1 
+	&& (navigator.userAgent.indexOf("Windows NT") != -1 || navigator.userAgent.indexOf("Windows 95") != -1 )) {
+	FlashMode = 1;
+}
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+function checkForFlash()
+{
+navigator.plugins.refresh();
+if ( navigator.mimeTypes["application/x-shockwave-flash"] )
+	parent.location.reload();
+else
+	setTimeout( "checkForFlash()", 1000 );
+}
+if (!FlashMode && navigator.appName && navigator.appName.indexOf("Netscape") != - 1 && navigator.appVersion.indexOf("4.") != - 1
+&& navigator.javaEnabled() && netscape.softupdate.Trigger.UpdateEnabled() && document.cookie.indexOf("StartedFlashInstall") == -1) {
+	var jarPath = new String("");
+	if (navigator.platform.indexOf("Win32") >= 0 )
+		jarPath = "http://download.macromedia.com/pub/shockwave/jars/english/silentflash32.jar"
+	else if (navigator.platform.indexOf("Win16") >=0 )
+		jarPath = "http://download.macromedia.com/pub/shockwave/jars/english/silentflash16.jar"
+	else if (navigator.platform.indexOf("MacPPC") >=0 )
+		jarPath = "http://download.macromedia.com/pub/shockwave/jars/english/silentflashppc.jar"
+	if (jarPath.length) {
+		netscape.softupdate.Trigger.StartSoftwareUpdate (jarPath, netscape.softupdate.Trigger.SILENT_MODE);
+		document.cookie='StartedFlashInstall;path=/;'
+		setTimeout("checkForFlash()", 1000);
+	}
+}
+// check for java
+var JavaOK = 0;
+if (navigator.userAgent && navigator.userAgent.indexOf("Macintosh") >= 0){
+	if (navigator.appVersion.indexOf("4.") >= 0 && navigator.javaEnabled())
+		JavaOK = 1;
+}
+else if (navigator.appVersion && (navigator.appVersion.indexOf("4.") >= 0 || navigator.appVersion.indexOf("3.") >= 0) && navigator.javaEnabled())
+	JavaOK = 1;
+// check for cookie
+if (document.cookie && (document.cookie.indexOf("ShockwaveFlash=P") >= 0)) {
+	FlashMode = 1;
+} else if (document.cookie && (document.cookie.indexOf("ShockwaveFlash=J") >= 0) ) {
+	JavaOK = 1;
+	FlashMode = 0;
+} else if (document.cookie && (document.cookie.indexOf("ShockwaveFlash=G") >= 0)) {
+	JavaOK = 0;
+	FlashMode = 0;
+}
+
+if ( FlashMode ) {
+	document.write('<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"');
+	document.write(' codebase="http://active.macromedia.com/flash/cabs/swflash.cab"');
+	document.write(' ID=7@7 WIDTH=425 HEIGHT=250>');
+	document.write('  <PARAM NAME=movie VALUE="7@7.spl"> ');
+	document.write('  <PARAM NAME=loop VALUE=false> ');
+	document.write('  <PARAM NAME=quality VALUE=high> ');
+	document.write('');
+	document.write('<EMBED SRC="7@7.spl"');
+	document.write(' WIDTH=425 HEIGHT=250');
+	document.write(' LOOP=false QUALITY=high');
+	document.write(' TYPE="application/futuresplash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">');
+	document.write('</EMBED>');
+	document.write('</OBJECT>');
+} else if ( JavaOK ) {
+if (navigator.appName && navigator.appName.indexOf("Netscape") >= 0 && navigator.appVersion.indexOf("4.") >= 0)
+	document.write('<APPLET CODE=Flash.class  CODEBASE=http://www.kube93.com/flash/flashplayer/ ARCHIVE=Flash.jar WIDTH=425 HEIGHT=250>')
+else
+	document.write('<APPLET CODE=Flash.class  CODEBASE=http://www.kube93.com/flash/flashplayer/ ARCHIVE=Flash.zip WIDTH=425 HEIGHT=250>')
+	document.write('  <PARAM NAME=cabbase VALUE="Flash.cab"> ');
+	document.write('  <PARAM NAME=movie VALUE="7@7.spl"> ');
+	document.write('  <PARAM NAME=loop VALUE=false> ');
+	document.write('  <PARAM NAME=quality VALUE=high> ');
+	document.write('</APPLET>');
+} else if (!(navigator.appName && navigator.appName.indexOf("Netscape")>=0 && navigator.appVersion.indexOf("2.")>=0)){
+	document.write('<IMG SRC="7@7.gif" WIDTH=425 HEIGHT=250 BORDER=0>');
+}
+//-->
+</SCRIPT>
+<NOEMBED>
+<IMG SRC="7@7.gif" WIDTH=425 HEIGHT=250 BORDER=0>
+</NOEMBED>
+<NOSCRIPT>
+<IMG SRC="7@7.gif" WIDTH=425 HEIGHT=250 BORDER=0>
+</NOSCRIPT>
+
+<!-- EndAftershock 7@7.spl -->
+
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+// call this function to set the cookie for the media type
+function SetFlashType(flashtype)
+{
+	document.cookie='ShockwaveFlash='+flashtype+';path=/;'
+	if ( navigator.appName.indexOf("Microsoft") != -1 )
+		parent.history.go(0);
+	else if ( navigator.userAgent.indexOf("Mozilla/2") != -1 )
+		parent.location = parent.location;
+	else
+		parent.location.reload();
+}
+//-->
+</SCRIPT>
+<br>
+<!-- sample links to allow user to set the cookie -->
+<a href='javascript:SetFlashType("")'>Use Automatic Detection</a><br>
+<a href='javascript:SetFlashType("P")'>Use Plug-in</a><br>
+<a href='javascript:SetFlashType("J")'>Use Java</a><br>
+<a href='javascript:SetFlashType("G")'>Use GIF</a><br>
+</BODY>
+</HTML>

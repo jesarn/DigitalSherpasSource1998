@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+<TITLE>KUBE 93 Player</TITLE>
+</head>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+// numPlugins = navigator.plugins.length;
+raplugin=0;
+
+
+// function Check_Plugin() {
+
+//  for (i = 0; i < numPlugins; i++)
+//  {
+//  plugin = navigator.plugins[i];
+//  if (plugin.name.substring(0,10)=="RealPlayer")
+//        {
+//        raplugin=1
+//        }
+//  }
+//}
+//
+//function SubmitForm() {
+//  Check_Plugin();
+//  if (raplugin) {
+//    document.speedform.plugin.value = "yes";
+//  }
+//  document.speedform.submit();
+//}  
+
+
+// -->
+</SCRIPT>
+<BODY BGCOLOR="#FFFFFF" marginwidth=0 marginheight=0>
+
+<table border=1 width=400 cellspacing=10 cellpadding=20>
+<td bgcolor="#ff3300">
+<p>
+<font face="arial" size=3>
+Please select your internet access speed:<br>
+<form ACTION="http://www.thedj.com/cgi-bin/checkos.cgi" name="speedform" method=post>
+<center>
+<table border=0>
+<td>
+<input type=hidden name="plugin" value="no">
+<input type=radio name="speed" value="144">14.4 or slower modem 
+<input type=radio name="speed" value="288" checked>28.8 modem<br>
+<input type=radio name="speed" value="336">33.6 modem 
+<input type=radio name="speed" value="56">56k modem<br>
+<input type=radio name="speed" value="ISDN">ISDN 
+<input type=radio name="speed" value="FR">Frame Relay<br>
+<input type=radio name="speed" value="T1">T1 or higher 
+<input type=radio name="speed" value="X">Don't know<br>
+</td>
+</table>
+</center>
+<br>
+If you already have RealAudio installed on your computer, press
+"continue", otherwise <a href="http://www.real.com/products/player/playerdl.html"> download the RealAudio Player</a>.
+
+<br>
+<br>
+<center>
+<!--input type=button value="Continue" onClick="SubmitForm()"-->
+<input type=submit value="Continue">
+</center>
+</form>
+</BODY></HTML>

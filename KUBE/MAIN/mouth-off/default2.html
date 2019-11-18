@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 2.0">
+<title>Mouth-Off! Interactive KUBE 93.3fm</title>
+<!--########################################################
+//-Client: KUBE 93.3fm - Seattle
+//-Created by: Digital-Sherpas (www.digital-sherpas.com)
+//-Date: 9.97
+//-Site-Section: Mouth-Off Page
+//-Version: v.1.01
+//-Developer: Danny Mavromatis (danny@digital-sherpas.com)
+//##########################################################-->
+</head>
+
+<body background="background.GIF" bgcolor="#C60000"
+text="#FFFFFF" link="#000000" vlink="#000000" alink="#000000"
+topmargin="0" leftmargin="0">
+
+<form method="POST">
+    <center><img src="mouthoff_logo.GIF" width="311" height="74">
+	<form method=POST action="http://www.digital-sherpas.com/scripts/cgi/kube/mouthoff.cmdl">
+<INPUT TYPE="hidden" Name="from" Value="Some Information From Mouth Off">
+    <table border="0" width="75%">
+        <tr>
+            <td>
+
+<script language="JavaScript">
+<!--
+
+//store the questions in arrays
+question = new Array(6);
+question[0] = "Tell us what you think of what's currently playing on KUBE 93?";
+question[1] = "Do you think we should play what's on KUBE 93 right now more often?";
+question[2] = "Have you heard what's playing on KUBE 93 right now too much?";
+question[3] = "Do you like what's on KUBE 93 right now?";
+question[4] = "Do you hate what's on KUBE 93 right now?";
+question[5] = "What's on KUBE 93 right now?";
+question[6] = "What's your favorite part of KUBE 93?";
+question[7] = "Type out as many words as you know to what's playing.";
+question[8] = "Do you have a personal connection to what you're hearing on KUBE 93 right now?";
+question[9] = "Question #10";
+
+//calculate a random index
+index = Math.floor(Math.random() * question.length);
+
+//display the question
+document.write("<center>\n");
+document.write("<font size='2' face='Arial'><B><input type='Hidden' name='mouthoff'>" + "\"" + question[index] + "\"\n");
+document.write("</B></center>\n");
+
+//done
+// -->
+</script>
+  <center>
+  <textarea name="comments" cols="30" rows="3" wrap="VIRTUAL"></textarea>
+	<br>
+  <input type="Submit" value="Here's My Mouth Full!"></CENTER>
+</td>
+        </tr>
+    </table>
+    </center>
+</form>
+
+<p><font face="Arial"><br>
+</font></p>
+</body>
+</html>

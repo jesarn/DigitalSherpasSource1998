@@ -1,0 +1,11 @@
+[FormDataToDataFile]
+ColNames=weekend,title15,artist15,title14,artist14,title13,artist13,title12,artist12,title11,artist11,title10,artist10,title9,artist9,title8,artist8,title7,artist7,title6,artist6,title5,artist5,title4,artist4,title3,artist3,title2,artist2,title1,artist1
+DataFile=smwrequests.dat
+
+[OutputSourceData]
+TPLFile=smwrequests.tpl
+OutputFile=../../../www/kube/comp/main/showtunes/smw/requests.htm
+
+[ReturnURL]
+URL=http://www.digital-sherpas.com/kube/comp/main/updates/smw-thanks.htm
+
